@@ -35,7 +35,6 @@ export const metadata: Metadata = {
     title: "Mahipalpur Luxury Spa | Russian Banya & Body Massage near Aerocity",
     description:
       "Body massage, Russian Banya and spa treatments in Mahipalpur, ten minutes from IGI Airport. Private rooms, certified therapists, open 24 hours.",
-    url: `${SITE_URL}/`,
     siteName: BUSINESS_NAME,
     images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Spa in Mahipalpur" }],
     locale: "en_IN",
@@ -47,7 +46,8 @@ export const metadata: Metadata = {
     description: "Body massage, Russian Banya and spa treatments in Mahipalpur. Open 24 hours.",
     images: [OG_IMAGE],
   },
-  alternates: { canonical: `${SITE_URL}/` },
+  // No site-wide canonical or og:url: each page sets its own through pageMeta(),
+  // and a default here would leak onto the 404 page as a canonical to the home page.
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },

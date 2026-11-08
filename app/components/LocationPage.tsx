@@ -39,6 +39,13 @@ const EXPLORE = [
   { href: "/contact/", title: "Contact & Booking", desc: "Phone, WhatsApp, address and travel times from across Delhi." },
 ];
 
+/**
+ * "in", "near" or "for", copied from the page title so headings never claim the
+ * spa is inside an area it only serves (e.g. "near Rohini", "in Aerocity").
+ */
+const areaPreposition = (content: LocationContent) =>
+  content.seo.title.match(/\b(in|near|for)\s+/i)?.[1].toLowerCase() ?? "near";
+
 /** Presentational shell for an area page; every word comes from `content`. */
 export default function LocationPage({ content }: { content: LocationContent }) {
   const { areaName, intro, highlights, treatmentsHead, treatments, nearby, gettingHere, article, faqs } = content;
@@ -368,7 +375,7 @@ export default function LocationPage({ content }: { content: LocationContent }) 
           <div className="section-head center" data-reveal>
             <p className="eyebrow">FAQs</p>
             <h2 className="h2">
-              {areaName} <em>Questions</em>
+              Russian Spa {areaPreposition(content)} {areaName}: <em>Your Questions</em>
             </h2>
           </div>
           <Faq faqs={faqs} />
