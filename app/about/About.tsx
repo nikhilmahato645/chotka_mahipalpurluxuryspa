@@ -7,7 +7,7 @@ import { PHONE_DISPLAY, PHONE_E164, waLink } from "../lib/site";
 import { AUDIENCES, CERTIFICATIONS, COMPARISON, LOCATIONS, MILESTONES, PILLARS, STATS, VALUES } from "./data";
 
 const A = "/assets/about";
-const WHATSAPP_URL = waLink("Hello! I'd like to know more about Russian Spa Centre and book an appointment.");
+const WHATSAPP_URL = waLink("Hello! I'd like to know more about Mahipalpur Luxury Spa and book an appointment.");
 
 export default function About() {
   return (
@@ -17,16 +17,16 @@ export default function About() {
         badge="Our Story"
         title={
           <>
-            About <em>Russian Spa Centre</em>, Mahipalpur
+            About <em>Mahipalpur Luxury Spa</em>, Mahipalpur
           </>
         }
         text={[
-          "For over a decade, Russian Spa Centre has been the premier choice for authentic spa experiences across Mahipalpur, Aerocity, Dwarka, Vasant Kunj, and near IGI Airport. We brought the authentic Russian Banya tradition to India and built a loyal community of thousands around it.",
+          "For over a decade, Mahipalpur Luxury Spa has been the premier choice for authentic spa experiences across Mahipalpur, Aerocity, Dwarka, Vasant Kunj, and near IGI Airport. We brought the authentic Russian Banya tradition to India and built a loyal community of thousands around it.",
           "Whether you're looking for the best spa in Mahipalpur, a luxury massage centre in Aerocity, or a relaxing body spa in Dwarka — we're your trusted wellness partner, open 24/7 every single day.",
         ]}
         stats={STATS}
         image={`${A}/hero-about-spa.jpg`}
-        imageAlt="Relaxing in a calm spa bath suite — about Russian Spa Centre"
+        imageAlt="Relaxing in a calm spa bath suite — about Mahipalpur Luxury Spa"
       />
 
       {/* MISSION */}
@@ -73,7 +73,7 @@ export default function About() {
             </h2>
             <div className="prose" style={{ marginTop: 22 }}>
               <p>
-                At Russian Spa Centre, we view spa treatments not as luxury indulgences but as essential components of
+                At Mahipalpur Luxury Spa, we view spa treatments not as luxury indulgences but as essential components of
                 a healthy lifestyle. Our holistic philosophy addresses physical tension, mental stress, and emotional
                 wellbeing simultaneously — because true wellness is all three at once. As the leading spa in
                 Mahipalpur and Aerocity, we&apos;ve served over 10,000+ satisfied clients from across Delhi NCR and
@@ -191,15 +191,15 @@ export default function About() {
             <h2 className="h2">
               Why We&apos;re <em>Different</em>
             </h2>
-            <p className="lede">Compare Russian Spa Centre with other massage centres in Mahipalpur, Aerocity, and Dwarka:</p>
+            <p className="lede">Compare Mahipalpur Luxury Spa with other massage centres in Mahipalpur, Aerocity, and Dwarka:</p>
           </div>
           <div className="table-wrap" data-reveal>
             <table className="rate-table compare">
-              <caption className="vh">Russian Spa Centre compared with other spas in Mahipalpur and Aerocity</caption>
+              <caption className="vh">Mahipalpur Luxury Spa compared with other spas in Mahipalpur and Aerocity</caption>
               <thead>
                 <tr>
                   <th scope="col">Feature</th>
-                  <th scope="col">Russian Spa Centre</th>
+                  <th scope="col">Mahipalpur Luxury Spa</th>
                   <th scope="col">Other Spas in Mahipalpur/Aerocity</th>
                 </tr>
               </thead>
@@ -323,7 +323,7 @@ export default function About() {
           <div data-reveal>
             <p className="eyebrow">Book Your Experience</p>
             <h2 className="h2">
-              Experience the <em>Russian Spa Centre</em> Difference
+              Experience the <em>Mahipalpur Luxury Spa</em> Difference
             </h2>
             <p className="lede" style={{ marginTop: 16 }}>
               One premises, in Mahipalpur — ten minutes from IGI Airport and open every hour of the year. 15% off for
@@ -346,7 +346,7 @@ export default function About() {
         title="Ready When You Are"
         text="Call, message or walk in at any hour. Same-day appointments available, ten minutes from IGI Airport."
         buttonLabel="Book via WhatsApp"
-        message="Hello! I'd like to know more about Russian Spa Centre and book an appointment."
+        message="Hello! I'd like to know more about Mahipalpur Luxury Spa and book an appointment."
       />
     </>
   );

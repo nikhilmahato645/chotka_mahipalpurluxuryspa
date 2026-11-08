@@ -7,12 +7,12 @@ const PATH = "/services/";
 
 export const metadata: Metadata = pageMeta({
   path: PATH,
-  title: "Spa & Massage Services in Mahipalpur | Russian Spa Centre",
+  title: "Spa & Massage Services in Mahipalpur | Mahipalpur Luxury Spa",
   description:
     "Swedish, deep tissue, Thai, aromatherapy, hot stone, reflexology and the Russian Banya — with durations and prices, in Mahipalpur. Open 24 hours.",
   ogDescription:
     "20+ treatments: Russian Banya with venik, deep tissue, Thai, aromatherapy, hot stone, couples suites and airport express sessions. Open 24/7 near IGI Airport.",
-  ogImageAlt: "Spa and massage services at Russian Spa Centre, Mahipalpur",
+  ogImageAlt: "Spa and massage services at Mahipalpur Luxury Spa",
   twitterDescription: "Russian Banya, deep tissue, Thai, aromatherapy, couples spa. Certified therapists, open 24/7.",
 });
 

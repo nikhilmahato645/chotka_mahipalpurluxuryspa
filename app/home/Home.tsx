@@ -58,7 +58,7 @@ export default function Home() {
             </p>
             {/* The <em> is display:block, so the explicit spaces keep the H1 readable as one sentence. */}
             <h1 id="hero-title">
-              Russian Spa Centre <em>Authentic Banya &amp; Body Massage</em> in Mahipalpur, near Aerocity
+              Mahipalpur Luxury Spa <em>Authentic Russian Banya &amp; Body Massage</em> near Aerocity
             </h1>
             <p className="hero-text">
               Unwind with a traditional Russian Banya, a therapeutic massage or a full relaxation ritual, ten minutes
@@ -86,7 +86,7 @@ export default function Home() {
               {HERO_PICKS.map((pick) => (
                 <li key={pick.name}>
                   <a
-                    href={waLink(`Hi! I'd like to book the ${pick.name} at Russian Spa Centre.`)}
+                    href={waLink(`Hi! I'd like to book the ${pick.name} at Mahipalpur Luxury Spa.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -207,7 +207,7 @@ export default function Home() {
               return (
                 <article key={s.name} className="pcard" data-reveal data-reveal-delay={(i % 3) * 80}>
                   <div className="tcard-media">
-                    <Img src={s.img} alt={`${s.name} at Russian Spa Centre, Mahipalpur — ${s.alt}`} width={900} height={600} />
+                    <Img src={s.img} alt={`${s.name} at Mahipalpur Luxury Spa — ${s.alt}`} width={900} height={600} />
                     <span className="pcard-chip">
                       <Icon size={13} strokeWidth={2} aria-hidden="true" /> {s.duration}
                     </span>
@@ -225,7 +225,7 @@ export default function Home() {
                         <PhoneCall size={13} aria-hidden="true" /> Call<span className="vh"> to book {s.name}</span>
                       </a>
                       <a
-                        href={waLink(`Hi! I'd like to book the ${s.name} at Russian Spa Centre.`)}
+                        href={waLink(`Hi! I'd like to book the ${s.name} at Mahipalpur Luxury Spa.`)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-copper"
@@ -300,7 +300,7 @@ export default function Home() {
             <div className="arch">
               <Img
                 src={`${A}/spa-treatment-room.jpg`}
-                alt="Warm, softly lit private treatment room at Russian Spa Centre in Mahipalpur"
+                alt="Warm, softly lit private treatment room at Mahipalpur Luxury Spa"
                 width={720}
                 height={900}
               />
@@ -311,13 +311,13 @@ export default function Home() {
             </div>
           </div>
           <div data-reveal>
-            <p className="eyebrow">About Russian Spa Centre</p>
+            <p className="eyebrow">About Mahipalpur Luxury Spa</p>
             <h2 className="h2">
               Russian Wellness, <em>Delhi Hospitality</em>
             </h2>
             <div className="prose" style={{ marginTop: 14 }}>
               <p>
-                Russian Spa Centre brings the steam-and-birch tradition of the Russian Banya together with modern
+                Mahipalpur Luxury Spa brings the steam-and-birch tradition of the Russian Banya together with modern
                 massage therapy under one roof in Mahipalpur. Guests come to us for body massage near Delhi Airport,
                 for a calm spa close to the Aerocity hotels, and for treatment rooms they can trust to be spotless and
                 private.
@@ -418,7 +418,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <a
-                  href={waLink(`Hi! I'd like to book the ${pkg.name} at Russian Spa Centre.`)}
+                  href={waLink(`Hi! I'd like to book the ${pkg.name} at Mahipalpur Luxury Spa.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`btn ${pkg.featured ? "btn-copper" : "btn-ghost"}`}
@@ -527,7 +527,7 @@ export default function Home() {
             </h2>
             <p>
               Looking for a full body massage after a long flight, a deep tissue session for a stubborn back, or a
-              traditional Russian Banya to sweat out a stressful week? Russian Spa Centre covers all of it from one
+              traditional Russian Banya to sweat out a stressful week? Mahipalpur Luxury Spa covers all of it from one
               calm, well-kept premises in Mahipalpur, open 24 hours a day.
             </p>
             <p>
@@ -551,7 +551,7 @@ export default function Home() {
             </p>
             <div className="table-wrap">
               <table className="rate-table">
-                <caption className="vh">Drive times to Russian Spa Centre, Mahipalpur</caption>
+                <caption className="vh">Drive times to Mahipalpur Luxury Spa</caption>
                 <thead>
                   <tr>
                     <th scope="col">Coming from</th>
@@ -641,16 +641,16 @@ export default function Home() {
         title="Ready for the Most Convenient Spa in Delhi NCR?"
         text="Book your Banya, massage or couples package now — we are open 24/7 and usually have a room ready the same day."
         buttonLabel="Book on WhatsApp"
-        message="Hello! I want to book an appointment at Russian Spa Centre. Please share more details about services and availability."
+        message="Hello! I want to book an appointment at Mahipalpur Luxury Spa. Please share more details about services and availability."
       />
 
       <MapBlock
         title={
           <>
-            Visit <em>Russian Spa Centre</em>
+            Visit <em>Mahipalpur Luxury Spa</em>
           </>
         }
-        iframeTitle="Russian Spa Centre location in Mahipalpur, New Delhi"
+        iframeTitle="Mahipalpur Luxury Spa location, New Delhi"
       />
     </>
   );

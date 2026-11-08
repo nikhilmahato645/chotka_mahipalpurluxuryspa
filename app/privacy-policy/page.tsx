@@ -7,10 +7,10 @@ const UPDATED = "1 November 2026";
 
 export const metadata: Metadata = pageMeta({
   path: PATH,
-  title: "Privacy Policy | Russian Spa Centre, Mahipalpur",
+  title: "Privacy Policy | Mahipalpur Luxury Spa",
   description:
-    "How Russian Spa Centre handles your details, booking messages and location when you use our website — including the optional “find the spa near me” feature.",
-  ogImageAlt: "Privacy policy — Russian Spa Centre, Mahipalpur",
+    "How Mahipalpur Luxury Spa handles your details, booking messages and location when you use our website — including the optional “find the spa near me” feature.",
+  ogImageAlt: "Privacy policy — Mahipalpur Luxury Spa",
 });
 
 const SECTIONS: LegalSection[] = [
@@ -60,7 +60,7 @@ const SECTIONS: LegalSection[] = [
         <p>
           Our website offers an optional <strong>“Find the spa near me”</strong> button. When you tap it, your browser
           asks for permission to share your location. We use your location only to help you find the best spa near
-          you — to show how far you are from Russian Spa Centre, give an estimated travel time, and open directions
+          you — to show how far you are from Mahipalpur Luxury Spa, give an estimated travel time, and open directions
           from where you are.
         </p>
         <ul>

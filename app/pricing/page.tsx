@@ -7,14 +7,14 @@ const PATH = "/pricing/";
 
 export const metadata: Metadata = pageMeta({
   path: PATH,
-  title: "Spa & Body Massage Prices in Mahipalpur | Russian Spa Centre",
+  title: "Spa & Body Massage Prices in Mahipalpur | Mahipalpur Luxury Spa",
   description:
     "Spa and body massage price list for Mahipalpur: massage from ₹2,800, Russian Banya ₹3,500, couples suite ₹7,500. Taxes included, no night surcharge.",
-  ogTitle: "Spa & Massage Price List | Russian Spa Centre Mahipalpur",
+  ogTitle: "Spa & Massage Price List | Mahipalpur Luxury Spa",
   ogDescription:
     "Body massage from ₹2,800 · Russian Banya ₹3,500 · Couples suite ₹7,500. Taxes included, no hidden charges. Open 24/7 near IGI Airport.",
-  ogImageAlt: "Spa and massage price list at Russian Spa Centre, Mahipalpur",
-  twitterTitle: "Spa & Massage Price List | Russian Spa Centre",
+  ogImageAlt: "Spa and massage price list at Mahipalpur Luxury Spa",
+  twitterTitle: "Spa & Massage Price List | Mahipalpur Luxury Spa",
   twitterDescription: "Massage from ₹2,800, Banya ₹3,500, couples ₹7,500. Taxes included, no hidden fees.",
 });
 
@@ -22,7 +22,7 @@ const PRICE_LD = {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
   "@id": `${SITE_URL}${PATH}#rates`,
-  name: "Russian Spa Centre — Treatment Rate Card",
+  name: "Mahipalpur Luxury Spa — Treatment Rate Card",
   url: `${SITE_URL}${PATH}`,
   provider: { "@id": LOCAL_BUSINESS["@id"] },
   itemListElement: RATE_GROUPS.flatMap((group) =>

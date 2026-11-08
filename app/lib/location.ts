@@ -33,6 +33,8 @@ export type LocationContent = {
   /** Real guest reviews only. Leave empty and the section is not rendered. */
   reviews?: { text: string; author: string; role: string }[];
   mapTitle: { lead: string; em: string };
+  /** Area names (from app/lib/locations.ts) to link in the "nearby areas" block. Defaults to the first four others. */
+  nearbyAreas?: string[];
   /** Photo at the top of the guide. */
   articleImage: ContentImage;
 

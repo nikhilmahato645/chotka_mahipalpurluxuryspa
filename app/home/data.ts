@@ -326,6 +326,9 @@ export const AREAS = [
   { name: "Gurugram", time: "20 min" },
   { name: "Saket & Hauz Khas", time: "22–25 min" },
   { name: "Karol Bagh", time: "25 min" },
+  { name: "Connaught Place", time: "30–45 min" },
+  { name: "Paharganj", time: "30–45 min" },
+  { name: "Rohini", time: "40–60 min" },
 ].map((area) => ({ ...area, href: locationPath(area.name) }));
 
 export const GALLERY = [
@@ -355,7 +358,7 @@ export const TESTIMONIALS = [
 
 export const HOME_FAQS: FaqItem[] = [
   {
-    q: "Where is Russian Spa Centre and how far is it from Delhi Airport?",
+    q: "Where is Mahipalpur Luxury Spa and how far is it from Delhi Airport?",
     a: "We are at Office No. 118, Defence Enclave, Mahipalpur, New Delhi 110037 — about 10 minutes by road from IGI Airport Terminal 3 and roughly 5 minutes from the Aerocity hotels.",
   },
   {

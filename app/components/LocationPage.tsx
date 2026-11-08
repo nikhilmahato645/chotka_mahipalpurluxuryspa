@@ -9,7 +9,7 @@ import MapBlock from "./MapBlock";
 import { ICONS } from "./icons";
 import { PHONE_DISPLAY, PHONE_E164, waLink } from "../lib/site";
 import type { LocationContent } from "../lib/location";
-import { LOCATION_PAGES } from "../lib/locations";
+import { LOCATION_PAGES, locationsByName } from "../lib/locations";
 
 const LINK_PATTERN = /\[([^\]]+)\]\(([^)]+)\)/g;
 
@@ -42,7 +42,9 @@ const EXPLORE = [
 export default function LocationPage({ content }: { content: LocationContent }) {
   const { areaName, intro, highlights, treatmentsHead, treatments, nearby, gettingHere, article, faqs } = content;
   const reviews = content.reviews ?? [];
-  const otherAreas = LOCATION_PAGES.filter((l) => l.path !== content.path).slice(0, 4);
+  const otherAreas = content.nearbyAreas
+    ? locationsByName(content.nearbyAreas).filter((l) => l.path !== content.path)
+    : LOCATION_PAGES.filter((l) => l.path !== content.path).slice(0, 4);
 
   return (
     <>
@@ -178,7 +180,7 @@ export default function LocationPage({ content }: { content: LocationContent }) 
           </div>
           <div className="table-wrap" data-reveal>
             <table className="rate-table">
-              <caption className="vh">Driving times from {areaName} landmarks to Russian Spa Centre, Mahipalpur</caption>
+              <caption className="vh">Driving times from {areaName} landmarks to Mahipalpur Luxury Spa</caption>
               <thead>
                 <tr>
                   <th scope="col">Landmark</th>
@@ -305,7 +307,7 @@ export default function LocationPage({ content }: { content: LocationContent }) 
             {content.mapTitle.lead} <em>{content.mapTitle.em}</em>
           </>
         }
-        iframeTitle={`Map from ${areaName} to Russian Spa Centre, Defence Enclave, Mahipalpur`}
+        iframeTitle={`Map from ${areaName} to Mahipalpur Luxury Spa, Defence Enclave, Mahipalpur`}
       />
 
       {/* OTHER AREA PAGES */}
@@ -322,7 +324,7 @@ export default function LocationPage({ content }: { content: LocationContent }) 
               {otherAreas.map((area, i) => (
                 <a key={area.path} href={area.path} className="card" data-reveal data-reveal-delay={i * 70}>
                   <h3>{area.label}</h3>
-                  <p>{area.meta} to our Mahipalpur premises.</p>
+                  <p>{area.blurb}</p>
                   <p className="text-link" style={{ marginTop: 16 }}>
                     {area.label} guide <ArrowRight size={13} aria-hidden="true" />
                   </p>
@@ -374,7 +376,7 @@ export default function LocationPage({ content }: { content: LocationContent }) 
         title="We're Open Right Now"
         text="Tell us when you can get here and we'll have a therapist ready. No night surcharge, no distance charge — the same rate at every hour."
         buttonLabel="Check Availability"
-        message={`Hi! I'm in ${areaName}. What's available today at Russian Spa Centre?`}
+        message={`Hi! I'm in ${areaName}. What's available today at Mahipalpur Luxury Spa?`}
       />
     </>
   );

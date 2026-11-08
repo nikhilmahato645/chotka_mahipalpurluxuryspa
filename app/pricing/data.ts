@@ -146,7 +146,7 @@ export const PROMISES = [
 export const PRICING_FAQS: FaqItem[] = [
   {
     q: "How much does a full body massage cost in Mahipalpur?",
-    a: "A 60-minute full body massage at Russian Spa Centre starts at ₹2,800 for Swedish and ₹3,400 for deep tissue. A 90-minute extended session runs ₹3,800 to ₹4,400. Every rate includes a private room, robe, shower access, fresh linens and herbal tea — there is no separate facility or service charge.",
+    a: "A 60-minute full body massage at Mahipalpur Luxury Spa starts at ₹2,800 for Swedish and ₹3,400 for deep tissue. A 90-minute extended session runs ₹3,800 to ₹4,400. Every rate includes a private room, robe, shower access, fresh linens and herbal tea — there is no separate facility or service charge.",
   },
   {
     q: "Are there any hidden charges or taxes added at the counter?",

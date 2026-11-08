@@ -223,7 +223,7 @@ export const AEROCITY: LocationContent = {
   faqs: [
     {
       q: "Is there a spa in Aerocity open after midnight?",
-      a: "The hotel spas in Aerocity typically close between 8 and 9 PM. Russian Spa Centre is five minutes away at Defence Enclave, Mahipalpur, and is open 24 hours a day, every day of the year. Our busiest window for Aerocity guests is between 11 PM and 4 AM.",
+      a: "The hotel spas in Aerocity typically close between 8 and 9 PM. Mahipalpur Luxury Spa is five minutes away at Defence Enclave, Mahipalpur, and is open 24 hours a day, every day of the year. Our busiest window for Aerocity guests is between 11 PM and 4 AM.",
     },
     {
       q: "How do I get to you from my Aerocity hotel?",
@@ -254,12 +254,12 @@ export const AEROCITY: LocationContent = {
   geo: { lat: 28.5535, lng: 77.12 },
 
   seo: {
-    title: "Best Spa & Body Massage in Aerocity | Russian Spa Centre",
+    title: "Best Spa & Body Massage in Aerocity | Mahipalpur Luxury Spa",
     description:
       "Open 24 hours, five minutes across NH-8 from the Aerocity hotels. Body massage, Russian Banya and long-haul recovery treatments, with no night surcharge.",
     ogTitle: "Spa in Aerocity | Open 24 Hours, 5 Minutes From Your Hotel",
     ogDescription:
       "Hotel spas close at 9 PM. We don't. Five minutes from the Aerocity hotels: long-haul recovery massage, late-night Russian Banya and a 45-minute layover express.",
-    ogImageAlt: "Russian Spa Centre — spa serving Aerocity, New Delhi, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa — spa serving Aerocity, New Delhi, open 24 hours",
   },
 };

@@ -33,7 +33,7 @@ export default function BookingForm() {
     }
 
     const message = [
-      "Hello Russian Spa Centre, I'd like to book an appointment.",
+      "Hello Mahipalpur Luxury Spa, I'd like to book an appointment.",
       "",
       `Name: ${form.name.trim()}`,
       `Phone: ${form.phone.trim()}`,

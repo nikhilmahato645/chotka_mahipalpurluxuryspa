@@ -27,12 +27,12 @@ import { LOCATION_PAGES } from "./lib/locations";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Russian Spa Centre | Body Massage & Spa in Mahipalpur",
+  title: "Mahipalpur Luxury Spa | Russian Banya & Body Massage near Aerocity",
   description:
     "Body massage, authentic Russian Banya and spa treatments in Mahipalpur, ten minutes from IGI Airport. Private rooms, certified therapists, open 24/7.",
   robots: INDEX_ROBOTS,
   openGraph: {
-    title: "Russian Spa Centre | Body Massage & Spa in Mahipalpur",
+    title: "Mahipalpur Luxury Spa | Russian Banya & Body Massage near Aerocity",
     description:
       "Body massage, Russian Banya and spa treatments in Mahipalpur, ten minutes from IGI Airport. Private rooms, certified therapists, open 24 hours.",
     url: `${SITE_URL}/`,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Russian Spa Centre | Body Massage & Spa in Mahipalpur",
+    title: "Mahipalpur Luxury Spa | Russian Banya & Body Massage near Aerocity",
     description: "Body massage, Russian Banya and spa treatments in Mahipalpur. Open 24 hours.",
     images: [OG_IMAGE],
   },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   applicationName: BUSINESS_NAME,
-  appleWebApp: { title: "Russian Spa", capable: true, statusBarStyle: "default" },
+  appleWebApp: { title: "Luxury Spa", capable: true, statusBarStyle: "default" },
   formatDetection: { telephone: false },
 };
 
@@ -79,7 +79,7 @@ const assistant = Assistant({
 });
 
 const AREAS_TEXT =
-  "Mahipalpur, Aerocity, IGI Airport, Dwarka, Vasant Kunj, Vasant Vihar, Saket, Hauz Khas, Green Park, Karol Bagh, Defence Colony and Gurugram";
+  "Mahipalpur, Aerocity, IGI Airport, Dwarka, Vasant Kunj, Vasant Vihar, Saket, Hauz Khas, Green Park, Karol Bagh, Connaught Place, Paharganj, Rohini, Defence Colony and Gurugram";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -119,10 +119,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="shell">
             <div className="footer-top">
               <div>
-                <a href="/" className="brand" aria-label="Russian Spa Centre — home">
+                <a href="/" className="brand" aria-label="Mahipalpur Luxury Spa — home">
                   <img src="/logo.svg" alt="" width={44} height={44} aria-hidden="true" />
                   <span className="brand-text">
-                    Russian Spa Centre
+                    Mahipalpur Luxury Spa
                     <small>Mahipalpur · Aerocity</small>
                   </span>
                 </a>
@@ -216,7 +216,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
 
             <div className="footer-bottom">
-              <p style={{ margin: 0 }}>© 2026 Russian Spa Centre · {SITE_HOST} · All rights reserved</p>
+              <p style={{ margin: 0 }}>© 2026 Mahipalpur Luxury Spa · {SITE_HOST} · All rights reserved</p>
               <p className="footer-legal" style={{ margin: 0 }}>
                 <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
                 <a href="/privacy-policy/">Privacy Policy</a>

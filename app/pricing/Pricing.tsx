@@ -42,7 +42,7 @@ export default function Pricing() {
         }
         stats={HERO_STATS}
         image={`${A}/hero-spa-price-list.jpg`}
-        imageAlt="Towels, massage oil and flowers — spa price list at Russian Spa Centre, Mahipalpur"
+        imageAlt="Towels, massage oil and flowers — spa price list at Mahipalpur Luxury Spa"
       />
 
       {/* PACKAGES */}
@@ -86,7 +86,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <a
-                  href={waLink(`Hi! I'd like to book the ${pkg.name} option at Russian Spa Centre.`)}
+                  href={waLink(`Hi! I'd like to book the ${pkg.name} option at Mahipalpur Luxury Spa.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`btn ${pkg.featured ? "btn-copper" : "btn-ghost"}`}
@@ -120,7 +120,7 @@ export default function Pricing() {
                 <p>{group.blurb}</p>
                 <div className="table-wrap">
                   <table className="rate-table">
-                    <caption className="vh">{group.title} rates at Russian Spa Centre, Mahipalpur</caption>
+                    <caption className="vh">{group.title} rates at Mahipalpur Luxury Spa</caption>
                     <thead>
                       <tr>
                         <th scope="col">Treatment</th>

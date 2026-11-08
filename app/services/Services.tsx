@@ -36,7 +36,7 @@ function ProductCard({ item, delay }: { item: Product; delay: number }) {
   return (
     <article id={slug(item.name)} className="pcard" data-reveal data-reveal-delay={delay}>
       <div className="pcard-media">
-        <Img src={item.img} alt={`${item.name} at Russian Spa Centre, Mahipalpur — ${item.alt}`} width={600} height={800} />
+        <Img src={item.img} alt={`${item.name} at Mahipalpur Luxury Spa — ${item.alt}`} width={600} height={800} />
         <span className="pcard-chip">
           <Icon size={13} strokeWidth={2} aria-hidden="true" /> {item.duration}
         </span>
@@ -62,7 +62,7 @@ function ProductCard({ item, delay }: { item: Product; delay: number }) {
             <PhoneCall size={13} aria-hidden="true" /> Call
           </a>
           <a
-            href={waLink(`Hi! I'd like to book the ${item.name} at Russian Spa Centre.`)}
+            href={waLink(`Hi! I'd like to book the ${item.name} at Mahipalpur Luxury Spa.`)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-copper"
@@ -192,7 +192,7 @@ export default function Services() {
               </div>
               <div className="table-wrap" data-reveal>
                 <table className="rate-table">
-                  <caption className="vh">Rituals and add-on treatments at Russian Spa Centre</caption>
+                  <caption className="vh">Rituals and add-on treatments at Mahipalpur Luxury Spa</caption>
                   <thead>
                     <tr>
                       <th scope="col">Ritual</th>

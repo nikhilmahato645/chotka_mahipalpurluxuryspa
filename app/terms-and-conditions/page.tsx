@@ -7,10 +7,10 @@ const UPDATED = "1 November 2026";
 
 export const metadata: Metadata = pageMeta({
   path: PATH,
-  title: "Terms & Conditions | Russian Spa Centre, Mahipalpur",
+  title: "Terms & Conditions | Mahipalpur Luxury Spa",
   description:
-    "Booking, cancellation, pricing, offers, health and guest-conduct terms for treatments at Russian Spa Centre, Mahipalpur, and for using our website.",
-  ogImageAlt: "Terms and conditions — Russian Spa Centre, Mahipalpur",
+    "Booking, cancellation, pricing, offers, health and guest-conduct terms for treatments at Mahipalpur Luxury Spa, and for using our website.",
+  ogImageAlt: "Terms and conditions — Mahipalpur Luxury Spa",
 });
 
 const SECTIONS: LegalSection[] = [

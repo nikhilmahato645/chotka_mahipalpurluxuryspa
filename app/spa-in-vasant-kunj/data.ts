@@ -161,6 +161,8 @@ export const VASANT_KUNJ: LocationContent = {
 
   mapTitle: { lead: "Our Mahipalpur Premises,", em: "12–15 Minutes Away" },
 
+  nearbyAreas: ["Saket", "South Delhi", "Aerocity", "Delhi"],
+
   articleImage: {
     src: `${A}/first-russian-banya-heat-room.jpg`,
     alt: "Wood-lined heat room with tiered benches and a basket of heated stones",
@@ -207,7 +209,7 @@ export const VASANT_KUNJ: LocationContent = {
 
   faqs: [
     {
-      q: "Is there a Russian Spa Centre branch in Vasant Kunj?",
+      q: "Is there a Mahipalpur Luxury Spa branch in Vasant Kunj?",
       a: "No. We have one premises, at Office No. 118, Defence Enclave, Mahipalpur, New Delhi 110037, and we serve Vasant Kunj from there. It is a 12–15 minute drive outside peak hours.",
     },
     {
@@ -224,7 +226,7 @@ export const VASANT_KUNJ: LocationContent = {
     },
     {
       q: "Do healthcare workers and senior citizens get a discount?",
-      a: "Yes. Healthcare workers and senior citizens get a standing 10% off, any day and any hour, on showing valid ID. New guests also get 15% off any single treatment on a first visit. Tell us which applies when you book.",
+      a: "Yes. Healthcare workers and senior citizens get a standing 10% off, any day and any hour, on showing valid ID. First-time guests also save 15% on a single treatment. Tell us which applies when you book.",
     },
     {
       q: "How much does a body massage cost?",
@@ -243,12 +245,12 @@ export const VASANT_KUNJ: LocationContent = {
   geo: { lat: 28.5245, lng: 77.1555 },
 
   seo: {
-    title: "Best Spa & Body Massage near Vasant Kunj | Russian Spa Centre",
+    title: "Best Spa & Body Massage near Vasant Kunj | Mahipalpur Luxury Spa",
     description:
       "Open 24/7, a 12–15 min drive from Vasant Kunj. Body massage and Russian Banya in Mahipalpur, with free parking and 10% off for healthcare staff.",
     ogTitle: "Spa near Vasant Kunj | Open 24 Hours, 12–15 Minutes Away",
     ogDescription:
       "Deep tissue for desk-work backs, a first Russian Banya explained step by step, and 10% off for healthcare workers. One Mahipalpur spa, 12–15 minutes from Vasant Kunj.",
-    ogImageAlt: "Russian Spa Centre, a spa serving Vasant Kunj from Mahipalpur, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Vasant Kunj, open 24 hours",
   },
 };

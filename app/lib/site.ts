@@ -7,7 +7,7 @@
 /** Live domain, no trailing slash. `trailingSlash: true` means every path ends in "/". */
 export const SITE_URL = "https://mahipalpurluxuryspa.in";
 export const SITE_HOST = SITE_URL.replace(/^https?:\/\//, "");
-export const BUSINESS_NAME = "Russian Spa Centre";
+export const BUSINESS_NAME = "Mahipalpur Luxury Spa";
 
 /** Sister site run by the same business (also the domain on EMAIL). */
 export const PARTNER_URL = "https://mahipalpurspaservicecentre.com";
@@ -44,6 +44,9 @@ export const AREAS_SERVED = [
   "Hauz Khas",
   "Green Park",
   "Karol Bagh",
+  "Connaught Place",
+  "Paharganj",
+  "Rohini",
   "Gurugram",
   "IGI Airport, New Delhi",
 ];
@@ -80,7 +83,7 @@ export const waLink = (message: string) =>
   `https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(message)}`;
 
 export const WHATSAPP_URL = waLink(
-  "Hello! I would like to book an appointment at Russian Spa Centre. Please share availability and pricing."
+  "Hello! I would like to book an appointment at Mahipalpur Luxury Spa. Please share availability and pricing."
 );
 
 /** Shared robots directive for every indexable page. */
@@ -151,7 +154,7 @@ export function pageMeta({
 export const LOCAL_BUSINESS = {
   "@type": "HealthAndBeautyBusiness",
   "@id": `${SITE_URL}/#business`,
-  name: `${BUSINESS_NAME} Mahipalpur`,
+  name: BUSINESS_NAME,
   image: OG_IMAGE,
   logo: `${SITE_URL}/logo.svg`,
   url: `${SITE_URL}/`,
@@ -255,7 +258,6 @@ export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/services/", label: "Services" },
   { href: "/pricing/", label: "Pricing" },
-  { href: "/spa-in-aerocity/", label: "Spa in Aerocity" },
   { href: "/about/", label: "About" },
   { href: "/contact/", label: "Contact" },
 ];

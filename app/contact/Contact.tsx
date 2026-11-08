@@ -31,7 +31,7 @@ const CHANNELS = [
     icon: MessageCircle,
     label: "WhatsApp",
     value: `Message ${PHONE_DISPLAY}`,
-    href: waLink("Hello! I'd like to book an appointment at Russian Spa Centre."),
+    href: waLink("Hello! I'd like to book an appointment at Mahipalpur Luxury Spa."),
     external: true,
     note: "Typical reply in under five minutes",
   },
@@ -74,7 +74,7 @@ export default function Contact() {
         }
         title={
           <>
-            <em>Contact</em> Russian Spa Centre, Mahipalpur
+            <em>Contact</em> Mahipalpur Luxury Spa
           </>
         }
         text={[
@@ -92,7 +92,7 @@ export default function Contact() {
         }
         stats={HERO_STATS}
         image={`${A}/hero-contact-spa.jpg`}
-        imageAlt="Calm bath suite at Russian Spa Centre, Mahipalpur"
+        imageAlt="Calm bath suite at Mahipalpur Luxury Spa"
       />
 
       {/* CHANNELS + FORM */}
@@ -172,10 +172,10 @@ export default function Contact() {
       <MapBlock
         title={
           <>
-            Visit <em>Russian Spa Centre</em>
+            Visit <em>Mahipalpur Luxury Spa</em>
           </>
         }
-        iframeTitle="Map showing Russian Spa Centre at Defence Enclave, Mahipalpur, New Delhi"
+        iframeTitle="Map showing Mahipalpur Luxury Spa at Defence Enclave, Mahipalpur, New Delhi"
       />
 
       {/* SERVICE AREA */}
@@ -232,7 +232,7 @@ export default function Contact() {
         title="Whatever the Hour, We'll Pick Up"
         text="3 AM after a delayed flight or 6 AM before a long day — the phone is answered and a therapist is ready."
         buttonLabel="Message on WhatsApp"
-        message="Hello! I'd like to book an appointment at Russian Spa Centre."
+        message="Hello! I'd like to book an appointment at Mahipalpur Luxury Spa."
       />
     </>
   );

@@ -67,7 +67,7 @@ export const LOCATIONS = [
   },
   {
     icon: "flame",
-    name: "Russian Spa Mahipalpur",
+    name: "Russian Banya in Mahipalpur",
     desc: "The same address as above — the Banya cycle, the venik treatment and what a first visit involves.",
     distance: "Main Location - Mahipalpur",
     link: "/services/#signature",

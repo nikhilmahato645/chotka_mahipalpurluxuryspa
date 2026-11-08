@@ -5,7 +5,7 @@ import { ArrowUp } from "lucide-react";
 import Img from "./Img";
 import { PHONE_E164, waLink } from "../lib/site";
 
-const WHATSAPP_URL = waLink("Hello, I want to book a spa appointment at Russian Spa Centre.");
+const WHATSAPP_URL = waLink("Hello, I want to book a spa appointment at Mahipalpur Luxury Spa.");
 const ICONS = "/assets/call_whatshap";
 
 /** Bottom-right stack: back-to-top (after scrolling), WhatsApp and call. */
@@ -35,11 +35,11 @@ export default function FloatingActions() {
         target="_blank"
         rel="noopener noreferrer"
         className="fab fab-icon"
-        aria-label="Chat with Russian Spa Centre on WhatsApp"
+        aria-label="Chat with Mahipalpur Luxury Spa on WhatsApp"
       >
         <Img src={`${ICONS}/whatshap.png`} alt="" width={56} height={56} loading="eager" />
       </a>
-      <a href={`tel:${PHONE_E164}`} className="fab fab-icon" aria-label="Call Russian Spa Centre">
+      <a href={`tel:${PHONE_E164}`} className="fab fab-icon" aria-label="Call Mahipalpur Luxury Spa">
         <Img src={`${ICONS}/call.png`} alt="" width={56} height={56} loading="eager" />
       </a>
     </div>

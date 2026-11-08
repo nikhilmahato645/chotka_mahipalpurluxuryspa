@@ -5,14 +5,14 @@ import { ORGANIZATION_LD, WEBSITE_LD, faqLd, jsonLd, pageMeta } from "./lib/site
 
 export const metadata: Metadata = pageMeta({
   path: "/",
-  title: "Russian Spa in Mahipalpur & Aerocity | Russian Spa Centre",
+  title: "Russian Spa in Mahipalpur & Aerocity | Mahipalpur Luxury Spa",
   description:
     "Authentic Russian Banya, deep tissue, Swedish and hot stone massage in Mahipalpur — 10 min from Delhi Airport, 5 min from Aerocity. Open 24/7.",
-  ogTitle: "Russian Spa Centre | Banya & Relaxation Massage near Delhi Airport",
+  ogTitle: "Mahipalpur Luxury Spa | Banya & Relaxation Massage near Delhi Airport",
   ogDescription:
     "Book a traditional Russian Banya or relaxation massage in Mahipalpur, close to Aerocity and IGI Airport. Certified therapists, private rooms, open 24 hours.",
-  ogImageAlt: "Russian Spa Centre — Russian Banya and body massage in Mahipalpur, near Aerocity",
-  twitterTitle: "Russian Spa Centre | Mahipalpur & Aerocity",
+  ogImageAlt: "Mahipalpur Luxury Spa — Russian Banya and body massage near Aerocity",
+  twitterTitle: "Mahipalpur Luxury Spa | Russian Banya & Massage near Aerocity",
   twitterDescription: "Russian Banya and body massage 10 min from Delhi Airport. Open 24/7.",
 });
 
