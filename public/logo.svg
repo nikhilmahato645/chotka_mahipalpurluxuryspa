@@ -1,0 +1,11 @@
+<svg width="200" height="200" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Russian Spa Centre">
+  <!-- Brand mark: pink tile, white arch and a three-petal lotus. -->
+  <rect width="64" height="64" fill="#FF3F6C"/>
+  <path d="M16 52V30a16 16 0 0 1 32 0v22" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <g fill="#FFE3A3">
+    <path d="M32 20c4.2 4.6 6.3 8.8 6.3 12.6 0 3.4-2.1 6.4-6.3 9.2-4.2-2.8-6.3-5.8-6.3-9.2 0-3.8 2.1-8 6.3-12.6z"/>
+    <path d="M20.5 29c5 .9 8.4 2.8 10.4 5.5 1.7 2.3 2 5.1.9 8.5-3.8-.5-6.6-1.8-8.6-4-2.2-2.6-3.1-5.9-2.7-10z" opacity="0.8"/>
+    <path d="M43.5 29c-5 .9-8.4 2.8-10.4 5.5-1.7 2.3-2 5.1-.9 8.5 3.8-.5 6.6-1.8 8.6-4 2.2-2.6 3.1-5.9 2.7-10z" opacity="0.8"/>
+  </g>
+  <path d="M22 48.5c2.6-1.9 4.9-1.9 7 0 2.1 1.9 4.4 1.9 7 0 2.6-1.9 4.9-1.9 7 0" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>

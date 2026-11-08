@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Design tokens — clean retail style
+   White surfaces, a pink accent, charcoal text, flat square corners.
+   Every value in globals.css comes from here.
+   ========================================================================== */
+
+:root {
+  /* Accent */
+  --pink: #ff3f6c;
+  --pink-dark: #e7305b;
+  --pink-pale: #fff0f3;
+
+  /* Text */
+  --text: #282c3f;
+  --text-2: #3e4152;
+  --muted: #535766;
+  --muted-2: #94969f;
+
+  /* Surfaces */
+  --white: #ffffff;
+  --soft: #f5f5f6;
+  --soft-2: #fafbfc;
+  --dark: #282c3f;
+
+  /* Lines */
+  --line: #eaeaec;
+  --line-2: #d4d5d9;
+
+  /* Deal colours */
+  --orange: #ff905a;
+  --green: #14958f;
+  --gold: #f4b324;
+  --gold-2: #f9c74f;
+  --deal: #b0154a;
+  --tile-top: #f26b3a;
+  --tile-bottom: #fbbf5d;
+
+  /* Type */
+  --font: var(--font-assistant), "Assistant", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+  /* Layout */
+  --shell: 1280px;
+  --pad: clamp(16px, 3vw, 32px);
+  --section: clamp(40px, 6vw, 72px);
+
+  /* Square everywhere */
+  --radius: 0;
+
+  /* Shadow */
+  --shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.07);
+  --shadow-lg: 0 6px 24px rgba(40, 44, 63, 0.14);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 0.5s;
+  --dur-fast: 0.18s;
+}

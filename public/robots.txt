@@ -1,0 +1,23 @@
+# ==============================================================
+# robots.txt — mahipalpurluxuryspa.in
+#
+# Everything public is crawlable. Only Next.js build internals are
+# held back, and their static asset folder is re-allowed so Google
+# can fetch the CSS, JS and fonts it needs to render the pages.
+# ==============================================================
+
+User-agent: *
+Allow: /
+
+# Build internals — the asset folder must stay fetchable.
+Disallow: /_next/
+Allow: /_next/static/
+
+# Tracking-parameter duplicates of real pages.
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+
+Sitemap: https://mahipalpurluxuryspa.in/sitemap.xml

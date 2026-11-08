@@ -1,0 +1,16 @@
+{
+  "name": "Russian Spa Centre — Mahipalpur, New Delhi",
+  "short_name": "Russian Spa",
+  "description": "Body massage, Russian Banya and spa treatments in Mahipalpur, 10 minutes from IGI Airport. Open 24/7.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff3f6c",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" },
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}
