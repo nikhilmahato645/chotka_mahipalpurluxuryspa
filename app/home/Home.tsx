@@ -1,5 +1,6 @@
 import { ArrowRight, Check, MapPin, MessageCircle, PhoneCall, Sparkles, Star } from "lucide-react";
 import Img from "../components/Img";
+import TherapistSection from "../components/TherapistSection";
 import Faq from "../components/Faq";
 import Stars from "../components/Stars";
 import Cta from "../components/Cta";
@@ -32,6 +33,9 @@ const A = "/assets/home";
 export default function Home() {
   return (
     <>
+      {/* THERAPISTS — first thing on the page, as one swipeable row */}
+      <TherapistSection layout="strip" />
+
       {/* HERO — full-width photo with a translucent overlay and a glass booking card */}
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-bg" aria-hidden="true">

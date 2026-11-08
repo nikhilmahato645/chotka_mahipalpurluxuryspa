@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { ArrowRight, MapPin, MessageCircle, PhoneCall } from "lucide-react";
 import PageHero from "./PageHero";
 import Img from "./Img";
+import TherapistSection from "./TherapistSection";
 import Faq from "./Faq";
 import Stars from "./Stars";
 import Cta from "./Cta";
@@ -48,6 +49,9 @@ export default function LocationPage({ content }: { content: LocationContent }) 
 
   return (
     <>
+      {/* THERAPISTS — first thing on the page, as on the home page */}
+      <TherapistSection layout="strip" />
+
       <PageHero
         crumbs={[{ label: content.breadcrumb }]}
         badge={

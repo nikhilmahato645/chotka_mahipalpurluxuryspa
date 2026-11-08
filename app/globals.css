@@ -1535,7 +1535,9 @@ textarea {
   text-align: center;
 }
 
+.cat-banner h1,
 .cat-banner h2 {
+  margin: 0;
   font-size: clamp(1.5rem, 1rem + 2vw, 2.4rem);
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -3505,5 +3507,487 @@ a.pill:hover {
   .header-icon {
     width: 38px;
     height: 38px;
+  }
+}
+
+/* ==========================================================================
+   Therapist team (home, location pages, /gallery/)
+   ========================================================================== */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.team-card {
+  margin: 0;
+}
+
+.team-card .cat-tile-body h3 {
+  font-size: 1.02rem;
+}
+
+.team-card .cat-tile-body span {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.86rem;
+}
+
+.team-card .cat-tile-body small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.74rem;
+  color: var(--text-2);
+}
+
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+/* Top-of-home therapist row: one horizontal, swipeable strip */
+
+.team-top {
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.team-top .cat-banner {
+  margin-bottom: 14px;
+  padding: 10px 16px;
+}
+
+.team-top .cat-banner h2 {
+  font-size: clamp(1.15rem, 0.9rem + 1.2vw, 1.7rem);
+}
+
+.team-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 6 * 14px) / 7);
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 2px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.team-strip > * {
+  scroll-snap-align: start;
+}
+
+.team-strip .team-card:hover {
+  transform: none;
+}
+
+.team-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 2px dashed #f4a36a;
+  background: linear-gradient(180deg, #fff4e6, #ffe3cc);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #b3203f;
+}
+
+.team-more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink) 0%, #ff6a5c 100%);
+  color: #fff;
+  box-shadow: 0 8px 20px -8px rgba(255, 63, 108, 0.6);
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.team-more:hover .team-more-icon {
+  transform: translateX(3px);
+}
+
+@media (max-width: 1024px) {
+  .team-strip {
+    grid-auto-columns: calc((100% - 2 * 14px) / 3.3);
+  }
+}
+
+@media (max-width: 640px) {
+  .team-strip {
+    grid-auto-columns: 40%;
+    gap: 10px;
+  }
+
+  .team-top .cat-tile-body h3 {
+    font-size: 0.9rem;
+  }
+
+  .team-top .cat-tile-body span {
+    font-size: 0.76rem;
+  }
+}
+
+/* ==========================================================================
+   Gallery (/gallery/): bento grid of the whole team + lightbox
+   ========================================================================== */
+
+.gallery-intro {
+  max-width: 640px;
+  margin: -8px auto 28px;
+  text-align: center;
+  color: var(--text-2);
+}
+
+.gallery-count {
+  display: inline-block;
+  margin: 0 8px 6px 0;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--pink) 0%, #ff6a5c 100%);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: clamp(170px, 19vw, 260px);
+  grid-auto-flow: row dense;
+  gap: 14px;
+}
+
+.bento-big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.bento-tall {
+  grid-row: span 2;
+}
+
+.bento-wide {
+  grid-column: span 2;
+}
+
+.bento-item {
+  position: relative;
+  min-width: 0;
+}
+
+/* Scroll-in: rise, grow and come into focus */
+.reveal-ready .bento-item[data-reveal] {
+  transform: translateY(32px) scale(0.94);
+  filter: blur(6px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease), filter 0.7s var(--ease);
+}
+
+.reveal-ready .bento-item[data-reveal][data-revealed] {
+  transform: none;
+  filter: none;
+}
+
+.bento-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 0;
+  background: linear-gradient(120deg, var(--tile-top), var(--tile-bottom), var(--pink), var(--tile-top));
+  background-size: 300% 100%;
+  cursor: zoom-in;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.bento-frame:hover,
+.bento-frame:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px -14px rgba(194, 24, 91, 0.5);
+  animation: bento-border 2.4s linear infinite;
+}
+
+.bento-media {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #fde7ef;
+}
+
+.bento-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transition: transform 0.8s var(--ease);
+}
+
+.bento-frame:hover .bento-media img {
+  transform: scale(1.08);
+}
+
+/* Big tiles drift slowly so the grid never looks static */
+.bento-big .bento-media img {
+  animation: bento-drift 14s ease-in-out infinite alternate;
+}
+
+.bento-shine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.5) 50%, transparent 70%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+
+.bento-frame:hover .bento-shine {
+  transform: translateX(120%);
+  transition: transform 0.9s var(--ease);
+}
+
+.bento-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 34px 12px 10px;
+  background: linear-gradient(to top, rgba(122, 14, 48, 0.88), rgba(122, 14, 48, 0));
+  color: #fff;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.bento-caption strong {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  transform: translateY(3px);
+  transition: transform 0.35s var(--ease);
+}
+
+.bento-frame:hover .bento-caption strong {
+  transform: none;
+}
+
+.bento-big .bento-caption {
+  padding: 60px 18px 16px;
+}
+
+.bento-big .bento-caption strong {
+  font-size: 1.4rem;
+}
+
+.bento-num {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+@keyframes bento-border {
+  to {
+    background-position: 300% 0;
+  }
+}
+
+@keyframes bento-drift {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08) translateY(-2%);
+  }
+}
+
+@media (max-width: 640px) {
+  .bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: clamp(170px, 54vw, 250px);
+    gap: 10px;
+  }
+
+  .bento-frame {
+    padding: 4px;
+  }
+
+  .bento-caption {
+    padding: 28px 8px 8px;
+  }
+
+  .bento-caption strong {
+    font-size: 0.88rem;
+  }
+
+  .bento-big .bento-caption strong {
+    font-size: 1.15rem;
+  }
+
+  .bento-num {
+    padding: 1px 6px;
+    font-size: 0.62rem;
+  }
+}
+
+/* Lightbox */
+
+html:has(.lightbox[open]) {
+  overflow: hidden;
+}
+
+.lightbox {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 16px;
+  border: 0;
+  background: transparent;
+}
+
+.lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+
+.lightbox::backdrop {
+  background: rgba(30, 8, 20, 0.88);
+  backdrop-filter: blur(6px);
+}
+
+.lightbox-figure {
+  margin: 0;
+  width: min(88vw, 500px);
+  padding: 6px;
+  background: linear-gradient(160deg, var(--tile-top), var(--tile-bottom));
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  animation: lightbox-in 0.35s var(--ease);
+}
+
+.lightbox-figure img {
+  width: 100%;
+  max-height: 72vh;
+  object-fit: cover;
+  background: #fde7ef;
+}
+
+.lightbox-figure figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 8px 4px;
+  color: #7a0e30;
+}
+
+.lightbox-figure figcaption strong {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.lightbox-figure figcaption span {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.lightbox-btn {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+
+.lightbox-btn:hover {
+  background: var(--pink);
+  transform: scale(1.08);
+}
+
+.lightbox-close {
+  top: 16px;
+  right: 16px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  top: 50%;
+  margin-top: -24px;
+}
+
+.lightbox-prev {
+  left: 16px;
+}
+
+.lightbox-next {
+  right: 16px;
+}
+
+@keyframes lightbox-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+  }
+}
+
+@media (max-width: 640px) {
+  .lightbox-prev,
+  .lightbox-next {
+    top: auto;
+    bottom: 20px;
+    margin-top: 0;
+  }
+
+  .lightbox-prev {
+    left: calc(50% - 60px);
+  }
+
+  .lightbox-next {
+    right: calc(50% - 60px);
+  }
+
+  .lightbox-figure img {
+    max-height: 64vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bento-frame:hover,
+  .bento-frame:focus-visible,
+  .bento-big .bento-media img,
+  .lightbox-figure {
+    animation: none;
   }
 }
