@@ -23,6 +23,7 @@ const LOCATIONS: Item[] = LOCATION_PAGES.map((l) => ({
 
 /** Main pages of the site. */
 const PAGES: Item[] = [
+  { kind: "page", name: "Body Massage & Spa in Mahipalpur", meta: "Our premises · home", href: "/", keywords: "mahipalpur defence enclave body massage spa home near me" },
   { kind: "page", name: "Services", meta: "All 20+ treatments", href: "/services/", keywords: "service treatments menu massage list" },
   { kind: "page", name: "Pricing", meta: "Full price list", href: "/pricing/", keywords: "price prices rate rates cost package packages membership offer offers discount" },
   { kind: "page", name: "Current Offers", meta: "15% off first visit", href: "/pricing/#offers", keywords: "offer discount deal first visit coupon" },

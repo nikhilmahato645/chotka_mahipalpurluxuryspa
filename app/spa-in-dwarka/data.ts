@@ -11,12 +11,12 @@ const A = "/assets/spa-in-dwarka";
 export const DWARKA: LocationContent = {
   path: "/spa-in-dwarka/",
   areaName: "Dwarka",
-  breadcrumb: "Spa in Dwarka",
+  breadcrumb: "Body Massage & Spa near Dwarka",
 
   heroImage: `${A}/spa-near-dwarka-hot-stone-massage.jpg`,
   heroImageAlt: "Therapist's hand gliding a warm basalt stone across a guest's back at a spa near Dwarka",
   heroBadge: "15–18 Minutes From Dwarka Sector 10",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Dwarka" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Dwarka" },
   heroText: [
     "If you've been searching for a spa in Dwarka, this is where we fit in: Mahipalpur Luxury Spa is a single premises at Defence Enclave, Mahipalpur, 15–18 minutes from Dwarka Sector 10 along the Dwarka Link Road. There is no branch in Dwarka, and we say so plainly.",
     "If you'd like massage to be a regular thing rather than a once-a-year treat, this page shows how to do it sensibly: a five-session membership family members can share, a weekday morning rate, and published prices with taxes included.",
@@ -71,7 +71,7 @@ export const DWARKA: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "Good Value, Every Visit",
-    titleLead: "Treatments To Book",
+    titleLead: "Body Massage & Spa To Book",
     titleEm: "Regularly",
     lede: "These rate-card treatments slot easily into a routine, from an hour of steam to a pregnancy-safe massage. What you see is what the price list charges, taxes included.",
   },
@@ -239,12 +239,12 @@ export const DWARKA: LocationContent = {
   geo: { lat: 28.5921, lng: 77.046 },
 
   seo: {
-    title: "Best Spa & Body Massage near Dwarka | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa near Dwarka | Mahipalpur Luxury Spa",
     description:
-      "15–18 min from Dwarka Sector 10. Body massage, steam and Russian Banya in Mahipalpur, open 24/7, with a ₹11,900 five-session membership families can share.",
-    ogTitle: "Spa near Dwarka | Regular Massage, Sensibly Priced",
+      "Body massage and spa near Dwarka, 15–18 min from Sector 10. Steam and Russian Banya too, open 24/7, with a ₹11,900 five-session membership to share.",
+    ogTitle: "Body Massage & Spa near Dwarka | Sensibly Priced, 24/7",
     ogDescription:
       "A shareable five-massage membership, a weekday morning rate and an Airport Express route from Sector 21. One Mahipalpur spa, 15–18 minutes from Dwarka.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Dwarka, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Dwarka, open 24 hours",
   },
 };

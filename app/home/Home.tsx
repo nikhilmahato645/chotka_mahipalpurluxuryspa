@@ -1,12 +1,12 @@
 import { ArrowRight, Check, MapPin, MessageCircle, PhoneCall, Sparkles, Star } from "lucide-react";
 import Img from "../components/Img";
-import TherapistSection from "../components/TherapistSection";
+import PageHero from "../components/PageHero";
 import Faq from "../components/Faq";
 import Stars from "../components/Stars";
 import Cta from "../components/Cta";
 import MapBlock from "../components/MapBlock";
 import { ICONS } from "../components/icons";
-import { PHONE_DISPLAY, PHONE_E164, waLink } from "../lib/site";
+import { PHONE_DISPLAY, PHONE_E164, WHATSAPP_URL, waLink } from "../lib/site";
 import {
   AREAS,
   AUDIENCES,
@@ -33,50 +33,48 @@ const A = "/assets/home";
 export default function Home() {
   return (
     <>
-      {/* THERAPISTS — first thing on the page, as one swipeable row */}
-      <TherapistSection layout="strip" />
-
-      {/* HERO — full-width photo with a translucent overlay and a glass booking card */}
-      <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-bg" aria-hidden="true">
-          <picture>
-            <source media="(max-width: 700px)" srcSet={`${A}/hero-banner-mobile.webp`} type="image/webp" />
-            <source media="(max-width: 700px)" srcSet={`${A}/hero-banner-mobile.jpg`} />
-            <source srcSet={`${A}/hero-banner.webp`} type="image/webp" />
-            <img
-              src={`${A}/hero-banner.jpg`}
-              alt=""
-              width={2000}
-              height={1100}
-              fetchPriority="high"
-              decoding="async"
-            />
-          </picture>
-        </div>
-        <div className="hero-overlay" aria-hidden="true" />
-
-        <div className="shell hero-grid">
-          <div className="hero-copy">
-            <p className="hero-badge">
-              <Sparkles size={13} aria-hidden="true" /> Premier Russian Spa in Delhi NCR
-            </p>
+      {/* BANNER (~60% of the first screen), then therapists, then the intro copy */}
+      <PageHero
+        badge={
+          <>
+            <Sparkles size={13} aria-hidden="true" /> Defence Enclave, Mahipalpur · 5 Min From Aerocity
+          </>
+        }
+        title={
+          <>
             {/* The <em> is display:block, so the explicit spaces keep the H1 readable as one sentence. */}
-            <h1 id="hero-title">
-              Mahipalpur Luxury Spa <em>Authentic Russian Banya &amp; Body Massage</em> near Aerocity
-            </h1>
-            <p className="hero-text">
-              Unwind with a traditional Russian Banya, a therapeutic massage or a full relaxation ritual, ten minutes
-              from Delhi Airport. Private rooms, certified therapists and appointments at any hour of the day or night.
-            </p>
-            <ul className="hero-checks">
-              {HERO_CHECKS.map((line) => (
-                <li key={line}>
-                  <Check size={14} strokeWidth={3} aria-hidden="true" /> {line}
-                </li>
-              ))}
-            </ul>
-          </div>
+            Best <em>Body Massage &amp; Spa</em> in Mahipalpur
+          </>
+        }
+        text={[
+          "Mahipalpur Luxury Spa is where Mahipalpur and Aerocity come for a proper body massage: Swedish, deep tissue, Thai or hot stone, in a private room with a certified therapist. Add a full spa ritual or an authentic Russian spa session with Banya, five minutes from the Aerocity hotels and ten from Delhi Airport, at any hour of the day or night.",
+        ]}
+        actions={
+          <>
+            <a href={`tel:${PHONE_E164}`} className="btn btn-copper">
+              <PhoneCall size={15} aria-hidden="true" /> Call {PHONE_DISPLAY}
+            </a>
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+              <MessageCircle size={15} aria-hidden="true" /> Book via WhatsApp
+            </a>
+          </>
+        }
+        image={`${A}/hero-banner-mobile.jpg`}
+        wideImage={`${A}/hero-banner.jpg`}
+        imageAlt="Russian Banya and massage suite at Mahipalpur Luxury Spa, near Aerocity"
+      >
+        <ul className="hero-checks">
+          {HERO_CHECKS.map((line) => (
+            <li key={line}>
+              <Check size={14} strokeWidth={3} aria-hidden="true" /> {line}
+            </li>
+          ))}
+        </ul>
+      </PageHero>
 
+      {/* QUICK BOOKING — glass card and headline numbers, moved below the therapists */}
+      <section className="section section-tight hero-after" aria-label="Quick booking and key facts">
+        <div className="shell hero-after-grid">
           <aside className="hero-glass" aria-label="Quick booking">
             <div className="hero-glass-head">
               <span className="rating-chip">
@@ -105,9 +103,6 @@ export default function Home() {
             </ul>
             <p className="hero-glass-note">Tap a treatment to book on WhatsApp · 15% off your first visit</p>
           </aside>
-        </div>
-
-        <div className="shell">
           <dl className="hero-stats">
             {STATS.map((s) => (
               <div key={s.label}>
@@ -142,7 +137,7 @@ export default function Home() {
           <div className="section-head center" data-reveal>
             <p className="eyebrow">Over a Decade of Care</p>
             <h2 className="h2">
-              Delhi NCR&apos;s Most Trusted <em>Russian Spa</em>
+              Mahipalpur&apos;s Most Trusted <em>Body Massage Centre</em>
             </h2>
             <p className="lede">
               For more than a decade we have offered genuine Russian Banya rituals and carefully delivered massage
@@ -198,7 +193,7 @@ export default function Home() {
           <div className="section-head center" data-reveal>
             <p className="eyebrow">Our Treatments</p>
             <h2 className="h2">
-              Premium <em>Spa Services</em>
+              Body Massage &amp; <em>Spa Services</em>
             </h2>
             <p className="lede">
               Nine treatments our guests book most, each adjusted to your body by a certified therapist. Prices include
@@ -259,7 +254,7 @@ export default function Home() {
           <div data-reveal>
             <p className="eyebrow">Relaxation Therapy</p>
             <h2 className="h2">
-              Relaxation Therapy in <em>Mahipalpur &amp; Aerocity</em>
+              Relaxing Body Massage in <em>Mahipalpur</em>
             </h2>
             <p className="lede" style={{ marginTop: 12 }}>
               Sometimes the goal is not to fix a sore muscle but simply to feel calm again. Our relaxation sessions
@@ -317,7 +312,7 @@ export default function Home() {
           <div data-reveal>
             <p className="eyebrow">About Mahipalpur Luxury Spa</p>
             <h2 className="h2">
-              Russian Wellness, <em>Delhi Hospitality</em>
+              Russian Spa &amp; Banya, <em>Delhi Hospitality</em>
             </h2>
             <div className="prose" style={{ marginTop: 14 }}>
               <p>
@@ -347,7 +342,7 @@ export default function Home() {
           <div className="section-head center" data-reveal>
             <p className="eyebrow">Why Choose Us</p>
             <h2 className="h2">
-              Why Guests Call Us <em>NCR&apos;s Premier Spa</em>
+              Why Guests Choose Our <em>Spa in Mahipalpur</em>
             </h2>
             <p className="lede">
               Plenty of places in Mahipalpur offer a massage. What keeps our guests coming back is the combination of
@@ -502,10 +497,10 @@ export default function Home() {
             <Img src={`${A}/aerocity-banner.jpg`} alt="Calm spa setting at sunrise" width={1400} height={933} />
             <div className="banner-content">
               <p className="eyebrow">
-                <MapPin size={13} aria-hidden="true" /> Featured Location
+                <MapPin size={13} aria-hidden="true" /> Five Minutes Away
               </p>
               <h2>
-                Best <em>Spa in Aerocity</em>
+                Staying in <em>Aerocity</em>?
               </h2>
               <p>
                 Five minutes from the Aerocity hotels and ten from IGI Airport. Long-haul recovery massage, late-night
@@ -513,7 +508,7 @@ export default function Home() {
               </p>
               <div className="actions">
                 <a href="/spa-in-aerocity/" className="btn btn-copper">
-                  Explore Spa in Aerocity <ArrowRight size={15} aria-hidden="true" />
+                  Body Massage &amp; Spa in Aerocity <ArrowRight size={15} aria-hidden="true" />
                 </a>
               </div>
             </div>
@@ -527,7 +522,7 @@ export default function Home() {
           <div className="prose" data-reveal>
             <p className="eyebrow">Spa &amp; Body Massage</p>
             <h2 className="h2" style={{ marginBottom: 14 }}>
-              Spa &amp; Body Massage in <em>Mahipalpur, Aerocity &amp; Dwarka</em>
+              Body Massage &amp; Spa in <em>Mahipalpur</em>, Near Aerocity &amp; Dwarka
             </h2>
             <p>
               Looking for a full body massage after a long flight, a deep tissue session for a stubborn back, or a

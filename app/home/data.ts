@@ -9,10 +9,10 @@ const A = "/assets/home";
    ========================================================================== */
 
 export const HERO_CHECKS = [
-  "10 minutes from Delhi Airport",
+  "Body massage by certified therapists",
+  "5 min from Aerocity, 10 from Delhi Airport",
   "Open 24 hours, 7 days a week",
-  "Certified, experienced therapists",
-  "Authentic Russian Banya with venik",
+  "Authentic Russian spa with Banya",
 ];
 
 /** Quick-book list in the hero card — prices match the rate card. */
@@ -360,6 +360,10 @@ export const HOME_FAQS: FaqItem[] = [
   {
     q: "Where is Mahipalpur Luxury Spa and how far is it from Delhi Airport?",
     a: "We are at Office No. 118, Defence Enclave, Mahipalpur, New Delhi 110037 — about 10 minutes by road from IGI Airport Terminal 3 and roughly 5 minutes from the Aerocity hotels.",
+  },
+  {
+    q: "Which body massages can I book in Mahipalpur?",
+    a: "Swedish, deep tissue, Thai, aromatherapy and hot stone massage, plus reflexology and full spa rituals. A 60-minute Swedish full body massage is ₹2,800 and deep tissue starts at ₹3,400, each in a private room with a certified therapist, at any hour.",
   },
   {
     q: "What happens during a Russian Banya session?",

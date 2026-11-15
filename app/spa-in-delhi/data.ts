@@ -10,13 +10,13 @@ const A = "/assets/spa-in-delhi";
 export const DELHI: LocationContent = {
   path: "/spa-in-delhi/",
   areaName: "Delhi",
-  breadcrumb: "Spa in Delhi",
+  breadcrumb: "Body Massage & Spa in Delhi",
 
   heroImage: `${A}/spa-in-delhi-head-and-face-massage.jpg`,
   heroImageAlt:
     "Guest wrapped in a white towel receiving a head and face massage, with a bowl of flowers beside the table, at a spa in Delhi",
   heroBadge: "Mahipalpur, New Delhi 110037 · Open 24/7",
-  h1: { lead: "Best Spa & Body Massage in", em: "Delhi" },
+  h1: { lead: "Best Body Massage & Spa in", em: "Delhi" },
   heroText: [
     "Mahipalpur Luxury Spa is a single spa in Delhi, at Office No. 118, Defence Enclave, Mahipalpur, close to IGI Airport and Aerocity. We have one premises and no branches, and this page explains how to reach it from wherever you are in the city.",
     "Inside you'll find an authentic Russian Banya, a full massage menu from Swedish to Ayurvedic Abhyanga, fully private rooms and one published price list with taxes included, open around the clock, all year.",
@@ -71,8 +71,8 @@ export const DELHI: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "The Core Menu",
-    titleLead: "Where To Start If",
-    titleEm: "You're New To Us",
+    titleLead: "Body Massage & Spa Picks",
+    titleEm: "If You're New To Us",
     lede: "A fair picture of the menu in six treatments, from a 45-minute airport express to a two-and-a-half-hour ritual. Rates are those on the price list, inclusive of taxes.",
   },
 
@@ -242,12 +242,12 @@ export const DELHI: LocationContent = {
   geo: { lat: 28.6139, lng: 77.209 },
 
   seo: {
-    title: "Best Spa & Body Massage in Delhi | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa in Delhi | Mahipalpur Luxury Spa",
     description:
-      "Russian Banya and body massage in Mahipalpur, New Delhi, 10–12 min from IGI Airport. Open 24/7, private rooms, one published price list, taxes included.",
-    ogTitle: "Spa in Delhi | Russian Banya & Massage, Open 24/7",
+      "Body massage and spa in Delhi, at Mahipalpur, 10–12 min from IGI Airport. Russian spa with Banya, private rooms, open 24/7, one price list, taxes included.",
+    ogTitle: "Body Massage & Spa in Delhi | Russian Banya, Open 24/7",
     ogDescription:
       "One spa in Mahipalpur, New Delhi, serving the whole city: private rooms, an authentic Russian Banya and every price published. Plus five checks before you book any spa.",
-    ogImageAlt: "Mahipalpur Luxury Spa, New Delhi, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa — body massage and spa in New Delhi, open 24 hours",
   },
 };

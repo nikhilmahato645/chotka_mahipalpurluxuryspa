@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState, type TouchEvent } from "react";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useState } from "react";
 import Img from "./Img";
+import Lightbox from "./Lightbox";
 import { THERAPISTS } from "../lib/therapists";
 
 /**
@@ -27,27 +27,7 @@ const pad = (n: number) => String(n).padStart(2, "0");
 
 export default function GallerySection({ title = "Our Therapists" }: { title?: string }) {
   const [active, setActive] = useState<number | null>(null);
-  const dialogRef = useRef<HTMLDialogElement>(null);
-  const touchX = useRef<number | null>(null);
   const total = THERAPISTS.length;
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-    if (active !== null && !dialog.open) dialog.showModal();
-    if (active === null && dialog.open) dialog.close();
-  }, [active]);
-
-  const step = (dir: 1 | -1) => setActive((i) => (i === null ? i : (i + dir + total) % total));
-
-  const onTouchEnd = (e: TouchEvent) => {
-    if (touchX.current === null) return;
-    const dx = e.changedTouches[0].clientX - touchX.current;
-    touchX.current = null;
-    if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
-  };
-
-  const current = active === null ? null : THERAPISTS[active];
 
   return (
     <section className="section section-tight team-gallery" id="therapists">
@@ -94,44 +74,7 @@ export default function GallerySection({ title = "Our Therapists" }: { title?: s
         </ul>
       </div>
 
-      <dialog
-        ref={dialogRef}
-        className="lightbox"
-        aria-label={current ? `${current.name}, photo ${active + 1} of ${total}` : "Photo viewer"}
-        onClose={() => setActive(null)}
-        onClick={(e) => {
-          if (e.target === e.currentTarget) setActive(null);
-        }}
-        onKeyDown={(e) => {
-          if (e.key === "ArrowRight") step(1);
-          if (e.key === "ArrowLeft") step(-1);
-        }}
-        onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
-        onTouchEnd={onTouchEnd}
-      >
-        {current ? (
-          <>
-            <figure className="lightbox-figure" key={current.id}>
-              <Img src={current.photo} alt={`${current.name}, therapist at Mahipalpur Luxury Spa`} width={600} height={750} loading="eager" />
-              <figcaption>
-                <strong>{current.name}</strong>
-                <span>
-                  {active + 1} / {total}
-                </span>
-              </figcaption>
-            </figure>
-            <button type="button" className="lightbox-btn lightbox-close" onClick={() => setActive(null)} aria-label="Close">
-              <X size={22} aria-hidden="true" />
-            </button>
-            <button type="button" className="lightbox-btn lightbox-prev" onClick={() => step(-1)} aria-label="Previous photo">
-              <ChevronLeft size={26} aria-hidden="true" />
-            </button>
-            <button type="button" className="lightbox-btn lightbox-next" onClick={() => step(1)} aria-label="Next photo">
-              <ChevronRight size={26} aria-hidden="true" />
-            </button>
-          </>
-        ) : null}
-      </dialog>
+      <Lightbox items={THERAPISTS} index={active} onChange={setActive} />
     </section>
   );
 }

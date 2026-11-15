@@ -11,13 +11,13 @@ const A = "/assets/spa-in-vasant-kunj";
 export const VASANT_KUNJ: LocationContent = {
   path: "/spa-in-vasant-kunj/",
   areaName: "Vasant Kunj",
-  breadcrumb: "Spa in Vasant Kunj",
+  breadcrumb: "Body Massage & Spa near Vasant Kunj",
 
   heroImage: `${A}/spa-near-vasant-kunj-neck-shoulder-massage.jpg`,
   heroImageAlt:
     "Therapist working out neck and shoulder tension during a deep tissue body massage, at a spa near Vasant Kunj",
   heroBadge: "12–15 Minutes From Vasant Kunj",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Vasant Kunj" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Vasant Kunj" },
   heroText: [
     "If you have been searching for a spa in Vasant Kunj, here is exactly where we are: one premises at Defence Enclave, Mahipalpur, a 12–15 minute drive from the Vasant Kunj sectors along Vasant Kunj Road. We have no branch inside Vasant Kunj, and we will not pretend otherwise.",
     "What the short drive gets you: body massage and an authentic Russian Banya at any hour, one published rate whether you come at 3 PM or 3 AM, free parking with no time limit, and 10% off for healthcare workers and senior citizens.",
@@ -72,8 +72,8 @@ export const VASANT_KUNJ: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "Matched To Vasant Kunj Routines",
-    titleLead: "Treatments Worth",
-    titleEm: "The Short Drive",
+    titleLead: "Body Massage & Spa",
+    titleEm: "Worth The Short Drive",
     lede: "Six options from our standard rate card, chosen for the needs above: desk-work tension, tired feet after a shift, a first Russian Banya near Vasant Kunj, and unhurried weekend time. Prices match the full price list, with taxes included.",
   },
 
@@ -245,12 +245,12 @@ export const VASANT_KUNJ: LocationContent = {
   geo: { lat: 28.5245, lng: 77.1555 },
 
   seo: {
-    title: "Best Spa & Body Massage near Vasant Kunj | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa near Vasant Kunj | Mahipalpur Luxury Spa",
     description:
-      "Open 24/7, a 12–15 min drive from Vasant Kunj. Body massage and Russian Banya in Mahipalpur, with free parking and 10% off for healthcare staff.",
-    ogTitle: "Spa near Vasant Kunj | Open 24 Hours, 12–15 Minutes Away",
+      "Body massage and spa near Vasant Kunj, a 12–15 min drive. Russian Banya too, open 24/7 in Mahipalpur, free parking and 10% off for healthcare staff.",
+    ogTitle: "Body Massage & Spa near Vasant Kunj | 12–15 Minutes Away",
     ogDescription:
       "Deep tissue for desk-work backs, a first Russian Banya explained step by step, and 10% off for healthcare workers. One Mahipalpur spa, 12–15 minutes from Vasant Kunj.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Vasant Kunj, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Vasant Kunj, open 24 hours",
   },
 };

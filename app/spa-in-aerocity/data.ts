@@ -3,43 +3,45 @@ import type { LocationContent } from "../lib/location";
 const A = "/assets/spa-in-aerocity";
 
 /**
- * Aerocity's angle is the hospitality district: hotel guests, business
- * travellers, late arrivals and corporate bookings.
+ * Aerocity's angle is the hotel district next door: guests arriving late,
+ * people between flights, and offices around Worldmark.
+ * All copy here is written for this site only. Treatments match rows in
+ * app/pricing/data.ts exactly (name, duration, price).
  */
 export const AEROCITY: LocationContent = {
   path: "/spa-in-aerocity/",
   areaName: "Aerocity",
-  breadcrumb: "Spa in Aerocity",
+  breadcrumb: "Body Massage & Spa in Aerocity",
 
   heroImage: `${A}/hero-spa-aerocity.jpg`,
-  heroImageAlt: "Guest unwinding at sunrise — spa serving Aerocity, New Delhi, open 24 hours",
-  heroBadge: "Five Minutes From The Aerocity Hotel Strip",
-  h1: { lead: "Best Spa & Body Massage in", em: "Aerocity" },
+  heroImageAlt: "Body massage and spa for Aerocity guests at Mahipalpur Luxury Spa, open 24 hours",
+  heroBadge: "5 Min From The Aerocity Hotels · Open 24/7",
+  h1: { lead: "Best Body Massage & Spa in", em: "Aerocity" },
   heroText: [
-    "Aerocity runs on a different clock. Guests check in at 2 AM off a delayed long-haul, close a deal over dinner at 11 PM, and fly out before the city wakes up. Hotel spas close at 8 or 9 PM — we do not close at all.",
-    "We are across NH-8 at Defence Enclave, five minutes from the JW Marriott, Pullman, Andaz, Roseate House, Holiday Inn and Aloft — one short cab or auto ride from your lobby.",
+    "Staying in Aerocity and want a proper body massage, not a rushed one squeezed in before the hotel spa shuts for the night? Our spa sits just across NH-8 at Defence Enclave, Mahipalpur, and the doors never close — not at midnight, not at 4 AM.",
+    "Every treatment room is private, every therapist is certified, and the rate card is the same at 3 AM as at 3 PM. Most Aerocity hotels are a five-minute cab or auto ride away.",
   ],
   heroStats: [
-    { value: "5 min", label: "From The Hotel Strip" },
-    { value: "24/7", label: "Including 3 AM" },
-    { value: "₹0", label: "Night Surcharge" },
-    { value: "45 min", label: "Express Option" },
+    { value: "5 min", label: "From Aerocity Hotels" },
+    { value: "24/7", label: "No Closing Time" },
+    { value: "₹0", label: "Late-Night Extra" },
+    { value: "₹2,400", label: "45-Min Layover Session" },
   ],
 
   intro: {
-    label: "Why Aerocity Guests Come To Us",
-    titleLead: "Built Around A",
-    titleEm: "Traveller's Schedule",
+    label: "Why Aerocity Books With Us",
+    titleLead: "Body Massage For Guests",
+    titleEm: "On Hotel Time",
     paras: [
-      "Almost every booking we take from Aerocity has a flight attached to it. That shapes how we run the session: we confirm your hard deadline first, build the treatment backwards from it, and put you in a room within twenty minutes of arrival rather than parking you in a waiting lounge.",
-      "It also shapes what we recommend. Long-haul bodies are dehydrated, stiff through the hips and shoulders, and running on the wrong time zone. A generic relaxation massage is pleasant but wasted on that. Our therapists work the specific pattern that eleven hours in a seat produces, and finish with a sequence that either wakes you up or puts you down, depending on which you need next.",
-      "For the corporate side of Aerocity — the offices around Worldmark and the conference floors in the hotels — we run chair-massage sessions on site and group bookings with invoiced billing and full GST documentation. Most of that work happens in the gap between a morning session and an evening flight.",
+      "Aerocity is a neighbourhood of hotels, offices and people in transit, and very few of them keep normal hours. Someone lands at midnight, someone else has a conference that runs late, a third person has five hours to kill before a connection. A spa that closes at nine is no use to any of them. That is the gap we fill.",
+      "When you book from Aerocity, tell us two things: when you can arrive, and when you need to be somewhere next. We plan the body massage around both, so the session is never cut short and you are never left waiting in reception. If you only have an hour, we will say so honestly and suggest something that fits.",
+      "For teams working out of the Worldmark offices or the hotel conference floors, we arrange group visits and on-site chair massage, with invoices and GST paperwork for the company. The corporate options are listed on our pricing page.",
     ],
   },
 
   introImage: {
     src: `${A}/traveller-recovery.jpg`,
-    alt: "Hot stone recovery treatment for Aerocity travellers",
+    alt: "Hot stone body massage for a guest staying in Aerocity",
     width: 800,
     height: 533,
   },
@@ -47,93 +49,93 @@ export const AEROCITY: LocationContent = {
   highlights: [
     {
       icon: "car",
-      title: "Five Minutes Away",
-      desc: "A single turn off NH-8 from the hotel lobbies, with free on-site parking. Any hotel cab knows the route.",
+      title: "A Short Ride Over NH-8",
+      desc: "About five minutes from the hotel entrances to our gate at Defence Enclave, with free parking if you drive yourself.",
     },
     {
       icon: "moon",
-      title: "Open When Hotel Spas Aren't",
-      desc: "The in-house spa shuts at 8 or 9 PM. Our busiest Aerocity window is 11 PM to 4 AM.",
+      title: "Open Through The Night",
+      desc: "Hotel spas usually stop taking guests by 8 or 9 PM. We take bookings at every hour, every day.",
     },
     {
       icon: "briefcase",
-      title: "Invoiced Corporate Billing",
-      desc: "Group bookings, on-site chair massage and GST documentation for expense claims.",
+      title: "Company Billing",
+      desc: "Group visits and on-site chair massage for Aerocity offices, invoiced with GST documents.",
     },
     {
       icon: "clock",
-      title: "Flight-Deadline Scheduling",
-      desc: "Give us your boarding time and we build the session around it. You will not miss a gate because of us.",
+      title: "Planned Around Your Flight",
+      desc: "Share your departure time when you book and the session is timed to get you back with room to spare.",
     },
   ],
 
   treatmentsHead: {
-    eyebrow: "Most Booked Here",
-    titleLead: "What Aerocity Guests",
-    titleEm: "Actually Book",
-    lede: "Drawn from our own booking log rather than a generic menu — these are the treatments guests travelling from Aerocity choose most, and why.",
+    eyebrow: "Good Choices From Aerocity",
+    titleLead: "Body Massages That Suit",
+    titleEm: "A Hotel Stay",
+    lede: "Six body massage and spa treatments from our regular rate card that work well around travel, late arrivals and long working days. The prices are the published ones, taxes included.",
   },
 
   treatments: [
     {
       icon: "activity",
-      name: "Long-Haul Recovery Massage",
-      desc: "Built for the specific stiffness eleven hours in economy produces — hip flexors, thoracic spine, neck. The single most booked treatment from the Aerocity hotels.",
-      duration: "75 min",
+      name: "Sports & Recovery Massage",
+      desc: "Trigger-point work and stretching for legs and a back that have been folded into a plane seat or a conference chair all day.",
+      duration: "90 min",
       price: "₹3,600",
     },
     {
-      icon: "feet",
-      name: "Post-Flight Reflexology",
-      desc: "For swollen, aching feet after a long sector. Twenty minutes in and most guests say their shoes fit again.",
-      duration: "60 min",
-      price: "₹2,200",
-    },
-    {
-      icon: "flame",
-      name: "Late-Night Banya",
-      desc: "The 1 AM booking. Steam, venik and a cold plunge reset the body clock faster than lying awake in a hotel room fighting jet lag.",
-      duration: "90 min",
-      price: "₹3,500",
-    },
-    {
       icon: "dumbbell",
-      name: "Executive Deep Tissue",
-      desc: "Shoulders and lower back, for guests who have spent the week between a laptop and a boardroom. Firm, targeted, no small talk unless you want it.",
+      name: "Deep Tissue Massage",
+      desc: "Firm, focused pressure on the shoulders and lower back. A good pick if your stay is mostly meetings and laptop work.",
       duration: "60 min",
       price: "₹3,400",
     },
     {
+      icon: "flower",
+      name: "Aromatherapy Massage",
+      desc: "Slow strokes with an oil blend chosen after a short chat with your therapist. Many guests book it late to help them sleep on a new time zone.",
+      duration: "60 min",
+      price: "₹3,000",
+    },
+    {
+      icon: "feet",
+      name: "Reflexology",
+      desc: "Pressure-point work on the feet and hands, welcome after a long flight or a day of walking between terminals and meeting rooms.",
+      duration: "60 min",
+      price: "₹2,200",
+    },
+    {
       icon: "clock",
-      name: "Layover Express",
-      desc: "Massage, shower and refreshment inside the hour, for a connection with time to kill but not much. Show a boarding pass within 12 hours for the reduced rate.",
+      name: "Airport Layover Express",
+      desc: "A short massage, a shower and a drink inside 45 minutes. A boarding pass dated within 12 hours gets the reduced layover rate.",
       duration: "45 min",
       price: "₹2,400",
     },
     {
-      icon: "flower",
-      name: "Sleep-Reset Aromatherapy",
-      desc: "A vetiver and lavender blend worked slowly, timed for guests who need to be asleep within the hour and up for a 6 AM departure.",
-      duration: "60 min",
-      price: "₹3,000",
+      icon: "flame",
+      name: "Russian Banya with Venik",
+      desc: "Our Russian spa ritual: steam, a birch venik, a cold plunge and rest. Worth it when you have a longer gap rather than a quick hour.",
+      duration: "90 min",
+      price: "₹3,500",
     },
   ],
 
   nearby: [
-    { name: "JW Marriott Aerocity", distance: "5 min", note: "Straight across NH-8 to Defence Enclave" },
-    { name: "Pullman New Delhi Aerocity", distance: "5 min", note: "Straight across NH-8 via the service road" },
-    { name: "Andaz Delhi", distance: "5 min", note: "Concierge can book on your behalf" },
-    { name: "Roseate House", distance: "6 min", note: "Popular with our late-night Banya guests" },
-    { name: "Holiday Inn Aerocity", distance: "5 min", note: "Frequent corporate group bookings" },
-    { name: "Aloft Aerocity", distance: "5 min", note: "Short hop past the Worldmark blocks" },
-    { name: "Worldmark 1, 2 & 3", distance: "6 min", note: "On-site chair massage available for offices" },
-    { name: "Aerocity Metro Station", distance: "5 min", note: "Airport Express Line, then a short auto ride" },
-    { name: "IGI Terminal 3", distance: "10–12 min", note: "The route most of our Aerocity guests arrive on" },
+    { name: "JW Marriott Aerocity", distance: "5 min", note: "Cross NH-8 to Defence Enclave" },
+    { name: "Pullman New Delhi Aerocity", distance: "5 min", note: "Via the NH-8 service road" },
+    { name: "Andaz Delhi", distance: "5 min", note: "The front desk can call us to book" },
+    { name: "Roseate House", distance: "6 min", note: "Easy by cab, day or night" },
+    { name: "Holiday Inn Aerocity", distance: "5 min", note: "Handy for group visits" },
+    { name: "Aloft Aerocity", distance: "5 min", note: "Past the Worldmark buildings" },
+    { name: "Worldmark 1, 2 & 3", distance: "6 min", note: "Chair massage can come to your office" },
+    { name: "Aerocity Metro Station", distance: "5 min", note: "Airport Express Line, then a short auto" },
+    { name: "IGI Terminal 3", distance: "10–12 min", note: "Direct by cab from arrivals" },
   ],
 
   nearbyImage: {
     src: `${A}/aerocity-treatments.jpg`,
-    alt: "Thai head massage booked by Aerocity hotel guests",
+    alt: "Head massage at our spa near the Aerocity hotels",
     width: 800,
     height: 534,
   },
@@ -141,125 +143,109 @@ export const AEROCITY: LocationContent = {
   gettingHere: [
     {
       icon: "car",
-      title: "By hotel car or cab",
-      desc: "Ask for Defence Enclave, Mahipalpur, on the far side of NH-8. It is a single turn off the highway and drivers know it. Five minutes in normal traffic, eight if the flyover is backed up.",
+      title: "By cab or hotel car",
+      desc: "Tell the driver Defence Enclave, Mahipalpur. It is on the other side of NH-8 from the hotels, about five minutes away, or a few minutes more if the flyover is busy.",
     },
     {
       icon: "metro",
       title: "By Airport Express",
-      desc: "Aerocity station is on the Airport Express Line. From the exit it is a five-minute auto across the highway — cheaper than a cab and usually quicker at rush hour.",
+      desc: "Get off at Aerocity station and take an auto across the highway to Defence Enclave. It often beats a cab during peak traffic.",
     },
     {
       icon: "mapPin",
       title: "By auto-rickshaw",
-      desc: "Autos wait outside every Aerocity hotel at all hours. Tell the driver Defence Enclave, Mahipalpur — call us on the way and we will guide them to the exact gate.",
+      desc: "Autos wait near the hotels around the clock. Give us a call once you set off and we will direct the driver to our gate.",
     },
   ],
 
-  reviews: [
-    {
-      text: "Landed at 1 AM to find the hotel spa long shut. I took a cab across, was on the table twenty minutes after I messaged, and the Banya did more for the jet lag than any amount of lying in bed would have.",
-      author: "Daniel Okoye",
-      role: "Guest, Pullman Aerocity",
-    },
-    {
-      text: "We booked chair massages for a twelve-person offsite at Worldmark. They arrived on time, worked around our agenda, and the GST invoice was in my inbox the same afternoon.",
-      author: "Shalini Rao",
-      role: "Operations Lead, Aerocity",
-    },
-    {
-      text: "I fly this route monthly and the layover express has become part of the trip. Forty-five minutes, a shower, and I get on the next flight feeling human.",
-      author: "Marcus Feld",
-      role: "Frequent Flyer, Frankfurt–Delhi",
-    },
-  ],
+  reviews: [],
 
-  mapTitle: { lead: "Our Premises,", em: "Five Minutes Away" },
+  mapTitle: { lead: "Find Us", em: "Across NH-8 From Aerocity" },
 
   articleImage: {
     src: `${A}/flight-guide.jpg`,
-    alt: "Restorative herbal treatment after a long-haul flight",
+    alt: "Herbal spa treatment for a guest after a long flight into Delhi",
     width: 1000,
     height: 562,
   },
 
   article: {
-    label: "A Traveller's Guide",
-    titleLead: "How To Time A Session",
-    titleEm: "Around A Flight",
+    label: "Planning Your Visit",
+    titleLead: "Booking A Body Massage",
+    titleEm: "During An Aerocity Stay",
     standfirst:
-      "Almost every Aerocity booking has a departure or an arrival attached to it. The question is never really which massage — it is how much time you actually have, and what is worth doing with it.",
+      "Whether you have one free hour or a whole night between flights, a little planning gets you more out of the visit. Here is how guests staying in Aerocity usually choose.",
     sections: [
       {
-        heading: "What a long-haul flight leaves behind",
+        heading: "Just landed: what your body needs first",
         paras: [
-          "Eleven hours in a seat produces a fairly predictable pattern: shortened hip flexors from sitting, a compressed lower back, shoulders rolled forward, fluid pooled in the lower legs, and a nervous system that has no idea what time it is. A generic relaxation massage is pleasant but largely wasted on that — it treats none of the four things the flight actually did.",
-          "What helps is targeted: firm work through the hips and lower back to undo the sitting, lighter drainage-style work on the legs, and a finish chosen for what you need next. Tell the therapist whether you are going to a meeting or to bed and the last fifteen minutes change completely — brisker and shorter to wake you up, slower and warmer to put you down.",
+          "After a long flight the common complaints are a stiff lower back, tight hips, heavy legs and a head that will not settle. A full body massage that spends time on the back and hips, with lighter work on the legs, deals with most of that. A [Deep Tissue Massage](/services/) suits guests who carry tension in the shoulders; a [Sports & Recovery Massage](/services/) suits those whose legs feel worst.",
+          "Tell your therapist what comes next. If you are heading to a meeting, the session can end on a brisker note so you leave alert. If you are going to bed, they will keep it slow and warm so sleep comes easily.",
         ],
       },
       {
-        heading: "Ninety minutes, three hours, or an overnight",
+        heading: "How much time you have decides what to book",
         paras: [
-          "With under two hours of usable time, book the 45-minute [Airport Layover Express](/pricing/) at ₹2,400 — massage, shower and refreshment, and you are back at the terminal with margin. With three to four hours, a 60- or 90-minute massage plus a shower is comfortable, and there is no reason to rush it. Anything beyond five hours and the [Banya with venik](/services/) becomes the better use of the gap, because the heat cycle does more for a flown-out body than another half-hour on the table.",
-          "Overnight layovers are the case we are built for. Between midnight and 5 AM, when the hotel spas are long shut, a 120- or 150-minute booking followed by an hour in the relaxation lounge is a far better transit than an airport bench — and the rate is identical to the same booking at midday.",
+          "With an hour or less, the 45-minute Airport Layover Express (₹2,400) covers a short massage and a shower. If you have two to four hours, a body massage of an hour or an hour and a half still leaves time to shower and get back calmly. With five hours or more, the Russian Banya with venik (₹3,500) is worth adding, because the steam and cold plunge cycle loosens up a travel-stiff body in a way a massage alone does not.",
+          "Late-night bookings cost the same as daytime ones; there is no night surcharge and no extra charge for coming from a hotel. Every rate is on our [price list](/pricing/).",
         ],
       },
       {
-        heading: "The logistics, kept simple",
+        heading: "Getting here and booking ahead",
         paras: [
-          "We are five minutes across NH-8 from the hotel strip, and every hotel cab and auto driver knows Defence Enclave. Call us on the way and we will guide the driver to the exact gate — the full address, travel times and directions are set out on our [contact page](/contact/).",
-          "Give us your boarding time when you book rather than when you arrive. We hold therapists against a departure time, so a delayed meeting or a slow immigration queue costs you nothing, and we will tell you honestly if what you want does not fit the window you have. Corporate bookings with GST invoicing are arranged through [contact](/contact/), and the story of the spa itself is on the [about page](/about/).",
+          "Hotel cabs and autos all know Defence Enclave in Mahipalpur. Call or WhatsApp as you set off and we will direct your driver to our gate. Our [contact page](/contact/) has the full address and a map.",
+          "If you have a flight to catch, mention the departure time when you book, not when you arrive. That lets us hold a therapist for you and tell you straight away if the treatment you want will not fit. For office group bookings with invoices, message us through the contact page; to learn more about who runs the spa, see the [about page](/about/).",
         ],
       },
     ],
     takeaways: [
-      "Under two hours of gap: the 45-minute express. Over five: the Banya is the better use of the time.",
-      "Say whether you are heading to a meeting or to bed — the last fifteen minutes are built around that answer.",
-      "Five minutes from the Aerocity hotels by cab or auto, with free parking if you drive.",
-      "We hold your therapist against your departure time, not your arrival — delays cost you nothing.",
+      "One hour or less: book the 45-minute Layover Express. Five hours or more: add the Russian Banya.",
+      "Heading to work or to sleep next? Say so, and your therapist ends the session to suit.",
+      "About five minutes from the Aerocity hotels by cab or auto, with free parking if you drive.",
+      "Give your departure time when you book so the session fits your schedule.",
     ],
   },
 
   faqs: [
     {
-      q: "Is there a spa in Aerocity open after midnight?",
-      a: "The hotel spas in Aerocity typically close between 8 and 9 PM. Mahipalpur Luxury Spa is five minutes away at Defence Enclave, Mahipalpur, and is open 24 hours a day, every day of the year. Our busiest window for Aerocity guests is between 11 PM and 4 AM.",
+      q: "Is there a body massage spa in Aerocity open after midnight?",
+      a: "Most hotel spas in Aerocity stop taking guests by 8 or 9 PM. Our spa, Mahipalpur Luxury Spa, is roughly five minutes from the hotels at Defence Enclave in Mahipalpur. We never close, and night prices match day prices.",
     },
     {
-      q: "How do I get to you from my Aerocity hotel?",
-      a: "Take a hotel cab or an auto-rickshaw and ask for Defence Enclave, Mahipalpur — it is about five minutes across NH-8. Call us on the way and we will guide the driver to the exact gate.",
+      q: "What is the quickest way to reach you from an Aerocity hotel?",
+      a: "A hotel cab or an auto-rickshaw. Ask for Defence Enclave, Mahipalpur, across NH-8 — it takes about five minutes. Call us when you set off and we will direct the driver to our gate.",
     },
     {
-      q: "How far is your spa from Aerocity exactly?",
-      a: "About five minutes by road. We are on the Mahipalpur side of NH-8 at Defence Enclave, directly opposite the Aerocity hospitality district. Allow eight minutes if the flyover is congested.",
+      q: "Is your spa inside Aerocity?",
+      a: "No. We have one spa, at Office No. 118, Defence Enclave, Mahipalpur, just across the highway from the Aerocity hotels. Keeping a single premises means the same therapists, hygiene standards and prices for every guest.",
     },
     {
-      q: "Do you have a branch inside Aerocity itself?",
-      a: "No. We run a single premises at Office No. 118, Defence Enclave, Mahipalpur, and serve Aerocity from there. Keeping one location is how we hold the same therapists, the same hygiene standard and the same rate card for every guest.",
+      q: "Which body massage is best after a long flight?",
+      a: "For a stiff back and shoulders, a 60-minute Deep Tissue Massage (₹3,400). For heavy, aching legs, the 90-minute Sports & Recovery Massage (₹3,600). If you are short on time, the 45-minute Airport Layover Express (₹2,400) includes a shower.",
     },
     {
-      q: "Can my company be invoiced for a group booking?",
-      a: "Yes. We handle corporate bookings with invoiced billing and full GST documentation, including on-site chair massage at Aerocity offices and conference venues. Group discounts start at six guests.",
+      q: "Can my company book a group visit or chair massage at the office?",
+      a: "Yes. We arrange group visits and on-site chair massage for Aerocity offices and conference venues, with invoicing and GST documents for the company. Send us the headcount, date and time window to get a quote.",
     },
     {
-      q: "I have a flight in three hours. Is that enough time?",
-      a: "Comfortably. Tell us your boarding time when you book and we will build the session backwards from it — typically a 45 or 60 minute treatment, a shower, and you are back at your terminal with an hour to spare. We have never made a guest miss a gate.",
+      q: "I fly out in three hours. Can I still fit in a massage?",
+      a: "Usually, yes. Tell us your departure time when you book. A 45- or 60-minute treatment plus a shower normally leaves enough time to get back to the airport, and we will tell you upfront if something will not fit.",
     },
     {
-      q: "Do you charge more for late-night appointments?",
-      a: "No. There is no night surcharge and no distance charge. A 3 AM session costs exactly what the same session costs at 3 PM.",
+      q: "Do late-night appointments cost more?",
+      a: "No. Night and day rates are identical, and coming from a hotel adds nothing to the bill. A 2 AM booking costs the same as one at 2 PM.",
     },
   ],
 
   geo: { lat: 28.5535, lng: 77.12 },
 
   seo: {
-    title: "Best Spa & Body Massage in Aerocity | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa in Aerocity | Mahipalpur Luxury Spa",
     description:
-      "Open 24 hours, five minutes across NH-8 from the Aerocity hotels. Body massage, Russian Banya and long-haul recovery treatments, with no night surcharge.",
-    ogTitle: "Spa in Aerocity | Open 24 Hours, 5 Minutes From Your Hotel",
+      "Best body massage and spa for Aerocity, five minutes across NH-8 from the hotels. Open 24 hours, Russian spa with Banya, and no night surcharge.",
+    ogTitle: "Body Massage & Spa in Aerocity | Open 24 Hours, 5 Min Away",
     ogDescription:
-      "Hotel spas close at 9 PM. We don't. Five minutes from the Aerocity hotels: long-haul recovery massage, late-night Russian Banya and a 45-minute layover express.",
-    ogImageAlt: "Mahipalpur Luxury Spa — spa serving Aerocity, New Delhi, open 24 hours",
+      "Hotel spas close by 9 PM; we stay open. Body massage and spa five minutes from the Aerocity hotels, plus a Russian spa with Banya. Open 24/7.",
+    ogImageAlt: "Mahipalpur Luxury Spa — body massage and spa serving Aerocity, open 24 hours",
   },
 };

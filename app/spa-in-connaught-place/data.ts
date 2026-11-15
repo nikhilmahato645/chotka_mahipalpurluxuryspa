@@ -11,13 +11,13 @@ const A = "/assets/spa-in-connaught-place";
 export const CONNAUGHT_PLACE: LocationContent = {
   path: "/spa-in-connaught-place/",
   areaName: "Connaught Place",
-  breadcrumb: "Spa in Connaught Place",
+  breadcrumb: "Body Massage & Spa near Connaught Place",
 
   heroImage: `${A}/spa-near-connaught-place-scrub-essentials.jpg`,
   heroImageAlt:
     "Scrub salts, a natural-bristle brush and a folded white towel arranged on a pale surface, at a spa near Connaught Place",
   heroBadge: "20–30 Minutes From CP By Airport Express",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Connaught Place" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Connaught Place" },
   heroText: [
     "Searching for a spa in Connaught Place? We're not in CP itself: our one spa is at Defence Enclave, Mahipalpur, which takes 30–45 minutes by road, or about 20–30 minutes on the Airport Express from Shivaji Stadium plus a short auto ride.",
     "If you've never been to a spa before, this page is a good place to start. It covers what to book, what happens in the room and what it costs, all at published prices, any hour of the day or night.",
@@ -72,7 +72,7 @@ export const CONNAUGHT_PLACE: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "Easy First Bookings",
-    titleLead: "Good Places To Start",
+    titleLead: "Body Massage & Spa Picks",
     titleEm: "If You're New To Spas",
     lede: "Six treatments from our menu that suit a first visit or a lunch-hour escape from CP. The prices are the ones on our price list, with taxes already included.",
   },
@@ -240,12 +240,12 @@ export const CONNAUGHT_PLACE: LocationContent = {
   geo: { lat: 28.6315, lng: 77.2167 },
 
   seo: {
-    title: "Spa & Body Massage near Connaught Place | Mahipalpur Luxury Spa",
+    title: "Body Massage & Spa near Connaught Place | Mahipalpur Luxury Spa",
     description:
-      "20–30 min from CP by Airport Express. First-timer friendly body massage and Russian Banya, open 24/7, with fixed prices and 15% off your first visit.",
-    ogTitle: "Spa near Connaught Place | First-Timer Friendly, Open 24/7",
+      "Body massage and spa near Connaught Place, 20–30 min by Airport Express. First-timer friendly, Russian Banya too, open 24/7, 15% off a first visit.",
+    ogTitle: "Body Massage & Spa near Connaught Place | Open 24/7",
     ogDescription:
       "Never been to a spa? Our guide explains every step. One Mahipalpur spa, 20–30 minutes from CP by Airport Express, with published prices and private rooms.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Connaught Place, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Connaught Place, open 24 hours",
   },
 };

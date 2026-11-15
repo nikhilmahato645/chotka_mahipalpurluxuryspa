@@ -32,10 +32,10 @@ export const MILESTONES = [
 export const LOCATIONS = [
   {
     icon: "mapPin",
-    name: "Spa in Mahipalpur",
+    name: "Body Massage & Spa in Mahipalpur",
     desc: "The premises itself — every treatment room, the Banya wing and the couples suites are here at Defence Enclave.",
     distance: "2 min from Mahipalpur Metro",
-    link: "/contact/",
+    link: "/",
   },
   {
     icon: "plane",

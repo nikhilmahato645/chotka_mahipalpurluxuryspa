@@ -1,5 +1,5 @@
-import { ArrowRight, Check, Clock, MessageCircle, PhoneCall } from "lucide-react";
-import Breadcrumb from "../components/Breadcrumb";
+import { ArrowRight, Check, Clock, MessageCircle, PhoneCall, Sparkles } from "lucide-react";
+import PageHero from "../components/PageHero";
 import Img from "../components/Img";
 import Faq from "../components/Faq";
 import Cta from "../components/Cta";
@@ -78,27 +78,37 @@ function ProductCard({ item, delay }: { item: Product; delay: number }) {
 export default function Services() {
   return (
     <>
-      {/* LISTING HEAD */}
-      <section className="shell" style={{ paddingTop: 22, paddingBottom: 18 }}>
-        <Breadcrumb items={[{ label: "Services" }]} />
-        <h1 style={{ margin: "14px 0 8px", fontSize: "clamp(1.4rem, 1.1rem + 1.4vw, 2rem)", fontWeight: 800 }}>
-          Spa &amp; Massage <em>Services</em> in Mahipalpur{" "}
-          <span style={{ fontWeight: 400, color: "var(--muted)", fontSize: "0.7em" }}>- 20+ treatments</span>
-        </h1>
-        <p className="lede" style={{ maxWidth: "90ch", margin: 0 }}>
-          Authentic Russian Banya, therapeutic body massage and full spa rituals — delivered by internationally
-          certified therapists in private rooms, ten minutes from IGI Airport. Every treatment below is available
-          round the clock, 365 days a year, across Mahipalpur, Aerocity, Dwarka and Vasant Kunj.
-        </p>
-        <div className="stat-row" style={{ maxWidth: 680 }}>
-          {HERO_STATS.map((s) => (
-            <div key={s.label} className="stat-chip">
-              <strong>{s.value}</strong>
-              <span>{s.label}</span>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* BANNER (~60% of the first screen), then therapists, then the intro copy */}
+      <PageHero
+        crumbs={[{ label: "Services" }]}
+        badge={
+          <>
+            <Sparkles size={13} aria-hidden="true" /> 20+ Treatments · Open 24/7
+          </>
+        }
+        title={
+          <>
+            Spa &amp; Massage <em>Services</em> in Mahipalpur
+          </>
+        }
+        text={[
+          "Authentic Russian Banya, therapeutic body massage and full spa rituals — delivered by internationally certified therapists in private rooms, ten minutes from IGI Airport. Every treatment below is available round the clock, 365 days a year, across Mahipalpur, Aerocity, Dwarka and Vasant Kunj.",
+        ]}
+        actions={
+          <>
+            <a href={`tel:${PHONE_E164}`} className="btn btn-copper">
+              <PhoneCall size={15} aria-hidden="true" /> Call {PHONE_DISPLAY}
+            </a>
+            <a href="/pricing/" className="btn btn-ghost">
+              Full Price List <ArrowRight size={15} aria-hidden="true" />
+            </a>
+          </>
+        }
+        stats={HERO_STATS}
+        image={`${A}/russian-banya-venik.jpg`}
+        wideImage="/assets/home/hero-banner.jpg"
+        imageAlt="Russian Banya with venik at Mahipalpur Luxury Spa"
+      />
 
       {/* LISTING: FILTER SIDEBAR + GRID */}
       <div className="shell">

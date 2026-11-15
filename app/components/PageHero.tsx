@@ -1,62 +1,95 @@
 import type { ReactNode } from "react";
 import Breadcrumb from "./Breadcrumb";
-import Img from "./Img";
+import TherapistSection from "./TherapistSection";
 
 /**
- * Inner-page hero: breadcrumb, the page's single H1, intro copy and stats on
- * the left; an arch-framed photo on the right.
+ * The top of every main page, in three parts:
+ * 1. Banner (about 60% of the first screen): photo, breadcrumb, badge, the page's
+ *    single H1 and the booking buttons. Kept short so the photo stays visible.
+ * 2. "Meet our therapists", in the rest of the first screen.
+ * 3. The intro copy and headline numbers, after the therapists.
+ *
+ * `wideImage` is an optional landscape photo for screens wider than 900px; pages
+ * whose own photo is portrait or small pass one so the desktop banner stays sharp.
  */
+const toWebp = (src: string) => src.replace(/\.(jpe?g|png)$/i, ".webp");
+
 export default function PageHero({
   crumbs,
   badge,
   title,
-  text,
+  text = [],
   actions,
   stats,
   image,
   imageAlt,
+  wideImage,
+  children,
 }: {
-  crumbs: { label: string; href?: string }[];
-  badge: ReactNode;
+  /** Leave out on the home page. */
+  crumbs?: { label: string; href?: string }[];
+  badge?: ReactNode;
   title: ReactNode;
-  text: string[];
+  /** Intro paragraphs, shown after the therapist section. */
+  text?: string[];
   actions?: ReactNode;
-  stats?: { value: string; label: string }[];
+  stats?: readonly { value: string; label: string }[];
   image: string;
   imageAlt: string;
+  wideImage?: string;
+  /** Extra intro content after the paragraphs (e.g. a checklist). */
+  children?: ReactNode;
 }) {
+  const hasIntro = text.length > 0 || Boolean(stats?.length) || Boolean(children);
+
   return (
-    <section className="phero">
-      <div className="shell phero-inner">
-        <div>
-          <Breadcrumb items={crumbs} />
-          <p className="eyebrow" style={{ marginTop: 16 }}>
-            {badge}
-          </p>
-          <h1>{title}</h1>
-          {text.map((para) => (
-            <p key={para.slice(0, 40)} className="phero-text">
-              {para}
-            </p>
-          ))}
-          {actions ? <div className="actions">{actions}</div> : null}
-          {stats ? (
-            <div className="stat-row">
-              {stats.map((s) => (
-                <div key={s.label} className="stat-chip">
-                  <strong>{s.value}</strong>
-                  <span>{s.label}</span>
-                </div>
-              ))}
-            </div>
-          ) : null}
+    <>
+      <section className="page-banner" aria-labelledby="page-title">
+        <div className="banner-bg">
+          <picture>
+            {wideImage ? (
+              <>
+                <source media="(min-width: 901px)" srcSet={toWebp(wideImage)} type="image/webp" />
+                <source media="(min-width: 901px)" srcSet={wideImage} />
+              </>
+            ) : null}
+            <source srcSet={toWebp(image)} type="image/webp" />
+            <img src={image} alt={imageAlt} width={1400} height={933} loading="eager" fetchPriority="high" decoding="async" />
+          </picture>
         </div>
-        <figure className="phero-media">
-          <div className="arch">
-            <Img src={image} alt={imageAlt} width={700} height={875} loading="eager" fetchPriority="high" />
+
+        <div className="shell banner-inner">
+          {crumbs ? <Breadcrumb items={crumbs} /> : null}
+          {badge ? <p className="banner-badge">{badge}</p> : null}
+          <h1 id="page-title">{title}</h1>
+          {actions ? <div className="actions">{actions}</div> : null}
+        </div>
+      </section>
+
+      <TherapistSection />
+
+      {hasIntro ? (
+        <section className="section section-tight page-intro">
+          <div className="shell">
+            {text.map((para) => (
+              <p key={para.slice(0, 40)} className="page-intro-text">
+                {para}
+              </p>
+            ))}
+            {children}
+            {stats?.length ? (
+              <div className="stat-row">
+                {stats.map((s) => (
+                  <div key={s.label} className="stat-chip">
+                    <strong>{s.value}</strong>
+                    <span>{s.label}</span>
+                  </div>
+                ))}
+              </div>
+            ) : null}
           </div>
-        </figure>
-      </div>
-    </section>
+        </section>
+      ) : null}
+    </>
   );
 }

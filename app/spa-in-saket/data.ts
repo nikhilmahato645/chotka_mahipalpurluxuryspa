@@ -10,12 +10,12 @@ const A = "/assets/spa-in-saket";
 export const SAKET: LocationContent = {
   path: "/spa-in-saket/",
   areaName: "Saket",
-  breadcrumb: "Spa in Saket",
+  breadcrumb: "Body Massage & Spa near Saket",
 
   heroImage: `${A}/spa-near-saket-swedish-back-massage.jpg`,
   heroImageAlt: "Therapist's hands working along the upper back during a Swedish massage at a spa near Saket",
   heroBadge: "22–25 Minutes From Saket",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Saket" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Saket" },
   heroText: [
     "If you're searching for a spa in Saket, here's how we fit: we're a single spa in Mahipalpur, at Defence Enclave, a 22–25 minute drive west of Saket outside rush hour. We don't have a branch in Saket.",
     "If your back and neck have spent all week at a screen, this page will help you pick the right kind of massage for it, and we're open whenever your workday ends, at one published rate.",
@@ -70,7 +70,7 @@ export const SAKET: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "For Desk-Bound Backs",
-    titleLead: "Massages That Suit",
+    titleLead: "Body Massages That Suit",
     titleEm: "A Screen-Heavy Week",
     lede: "For neck, shoulder and back tension, these are the rate-card treatments worth considering, from a 30-minute express to a 90-minute session. Prices are identical to the full price list, taxes included.",
   },
@@ -238,12 +238,12 @@ export const SAKET: LocationContent = {
   geo: { lat: 28.5245, lng: 77.2066 },
 
   seo: {
-    title: "Best Spa & Body Massage near Saket | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa near Saket | Mahipalpur Luxury Spa",
     description:
-      "Deep tissue, Thai and Swedish massage for desk-work tension, 22–25 min from Saket. Open 24/7, free parking, one published rate card, in Mahipalpur.",
-    ogTitle: "Spa near Saket | Massage For Desk Tension, Open 24/7",
+      "Body massage and spa near Saket, 22–25 min away: deep tissue, Thai and Swedish for desk-work tension. Open 24/7, free parking, one published rate card.",
+    ogTitle: "Body Massage & Spa near Saket | For Desk Tension, 24/7",
     ogDescription:
       "Not sure whether you need deep tissue, Thai or Swedish? Our guide explains, and we're open after every workday, 22–25 minutes from Saket.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Saket, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Saket, open 24 hours",
   },
 };

@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 import { ArrowRight, MapPin, MessageCircle, PhoneCall } from "lucide-react";
 import PageHero from "./PageHero";
 import Img from "./Img";
-import TherapistSection from "./TherapistSection";
 import Faq from "./Faq";
 import Stars from "./Stars";
 import Cta from "./Cta";
@@ -11,6 +10,9 @@ import { ICONS } from "./icons";
 import { PHONE_DISPLAY, PHONE_E164, waLink } from "../lib/site";
 import type { LocationContent } from "../lib/location";
 import { LOCATION_PAGES, locationsByName } from "../lib/locations";
+
+/** Area photos are portrait, so wide screens get the landscape home banner instead. */
+const WIDE_BANNER = "/assets/home/hero-banner.jpg";
 
 const LINK_PATTERN = /\[([^\]]+)\]\(([^)]+)\)/g;
 
@@ -56,9 +58,7 @@ export default function LocationPage({ content }: { content: LocationContent }) 
 
   return (
     <>
-      {/* THERAPISTS — first thing on the page, as on the home page */}
-      <TherapistSection layout="strip" />
-
+      {/* BANNER (~60% of the first screen), then therapists, then the intro copy */}
       <PageHero
         crumbs={[{ label: content.breadcrumb }]}
         badge={
@@ -91,6 +91,7 @@ export default function LocationPage({ content }: { content: LocationContent }) 
         stats={content.heroStats}
         image={content.heroImage}
         imageAlt={content.heroImageAlt}
+        wideImage={WIDE_BANNER}
       />
 
       {/* WHY THIS AREA */}

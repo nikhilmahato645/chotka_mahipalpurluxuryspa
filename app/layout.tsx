@@ -27,12 +27,12 @@ import { LOCATION_PAGES } from "./lib/locations";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Mahipalpur Luxury Spa | Russian Banya & Body Massage near Aerocity",
+  title: "Best Body Massage & Spa in Mahipalpur | Mahipalpur Luxury Spa",
   description:
     "Body massage, authentic Russian Banya and spa treatments in Mahipalpur, ten minutes from IGI Airport. Private rooms, certified therapists, open 24/7.",
   robots: INDEX_ROBOTS,
   openGraph: {
-    title: "Mahipalpur Luxury Spa | Russian Banya & Body Massage near Aerocity",
+    title: "Best Body Massage & Spa in Mahipalpur | Mahipalpur Luxury Spa",
     description:
       "Body massage, Russian Banya and spa treatments in Mahipalpur, ten minutes from IGI Airport. Private rooms, certified therapists, open 24 hours.",
     siteName: BUSINESS_NAME,
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mahipalpur Luxury Spa | Russian Banya & Body Massage near Aerocity",
+    title: "Best Body Massage & Spa in Mahipalpur | Mahipalpur Luxury Spa",
     description: "Body massage, Russian Banya and spa treatments in Mahipalpur. Open 24 hours.",
     images: [OG_IMAGE],
   },
@@ -109,12 +109,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <FloatingActions />
 
-        {/* Side offer tab — the first-visit discount from the pricing page. */}
-        <a href="/pricing/#offers" className="side-tab" aria-label="Flat 15% off your first visit — see the offer">
-          <span className="side-tab-arrow" aria-hidden="true" />
-          <span className="side-tab-text">FLAT 50% OFF for Two Booking</span>
-        </a>
-
         <footer className="site-footer">
           <div className="shell">
             <div className="footer-top">
@@ -176,7 +170,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </li>
                   ))}
                   <li>
-                    <a href="/contact/#map">Spa in Mahipalpur</a>
+                    <a href="/">Body Massage &amp; Spa in Mahipalpur</a>
                   </li>
                   <li>
                     <a href="/contact/#directions">Spa near IGI Airport</a>

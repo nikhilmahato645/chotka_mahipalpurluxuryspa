@@ -10,13 +10,13 @@ const A = "/assets/spa-in-south-delhi";
 export const SOUTH_DELHI: LocationContent = {
   path: "/spa-in-south-delhi/",
   areaName: "South Delhi",
-  breadcrumb: "Spa in South Delhi",
+  breadcrumb: "Body Massage & Spa for South Delhi",
 
   heroImage: `${A}/spa-for-south-delhi-candlelit-treatment-room.jpg`,
   heroImageAlt:
     "Reed diffuser, lit candles and a rolled white towel set out before a session at a spa for South Delhi",
   heroBadge: "About 22–25 Minutes From Hauz Khas",
-  h1: { lead: "Best Spa & Body Massage for", em: "South Delhi" },
+  h1: { lead: "Best Body Massage & Spa for", em: "South Delhi" },
   heroText: [
     "Most spa searches from South Delhi come down to one question: is it worth leaving the neighbourhood? Our answer: one spa, at Defence Enclave in Mahipalpur, roughly a 22–25 minute drive from Hauz Khas when the roads are clear. There's no branch in South Delhi itself.",
     "People make the trip for a spa evening that doesn't need watching the clock: a private couples suite, an authentic Russian Banya, published prices with taxes included, free parking, and doors that stay open all night.",
@@ -71,8 +71,8 @@ export const SOUTH_DELHI: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "Good For Two",
-    titleLead: "Treatments For",
-    titleEm: "A Spa Evening",
+    titleLead: "Body Massage & Couples Spa",
+    titleEm: "For An Evening Out",
     lede: "Six bookings from our standard rate card that suit a couple or two friends coming over from South Delhi, from a two-and-a-half-hour ritual to a short add-on. Every price matches the full price list.",
   },
 
@@ -239,12 +239,12 @@ export const SOUTH_DELHI: LocationContent = {
   geo: { lat: 28.5494, lng: 77.2001 },
 
   seo: {
-    title: "Best Spa & Body Massage for South Delhi | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa for South Delhi | Mahipalpur Luxury Spa",
     description:
-      "Couples spa suites, Russian Banya and body massage, about 22–25 min from Hauz Khas. Open 24/7 in Mahipalpur with free parking and published prices.",
-    ogTitle: "Couples Spa near South Delhi | Open 24 Hours",
+      "Body massage and spa for South Delhi, 22–25 min from Hauz Khas. Couples suites and Russian Banya, open 24/7 in Mahipalpur, free parking, published prices.",
+    ogTitle: "Body Massage & Couples Spa for South Delhi | Open 24/7",
     ogDescription:
       "A private couples suite, a shared Russian Banya ritual and a spa evening that runs as late as you like. One Mahipalpur spa, about 25 minutes from Hauz Khas.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving South Delhi, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving South Delhi, open 24 hours",
   },
 };

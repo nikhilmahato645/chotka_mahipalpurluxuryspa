@@ -24,7 +24,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Aerocity",
     path: "/spa-in-aerocity/",
-    label: "Spa in Aerocity",
+    label: "Body Massage & Spa in Aerocity",
     meta: "5 min from the hotels",
     blurb: "Five minutes across NH-8 from the hotel strip, open at every hour.",
     keywords: "aerocity hotel jw marriott pullman andaz roseate igi airport terminal t3 t1 layover location near",
@@ -33,7 +33,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Vasant Kunj",
     path: "/spa-in-vasant-kunj/",
-    label: "Spa in Vasant Kunj",
+    label: "Body Massage & Spa near Vasant Kunj",
     meta: "12–15 min drive",
     blurb: "A 12–15 minute drive along Vasant Kunj Road.",
     keywords: "vasant kunj sector a b c d fortis promenade ambience emporio kishangarh location near",
@@ -42,7 +42,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Dwarka",
     path: "/spa-in-dwarka/",
-    label: "Spa in Dwarka",
+    label: "Body Massage & Spa near Dwarka",
     meta: "15–18 min drive",
     blurb: "15–18 minutes from the Dwarka sectors via the Dwarka Link Road.",
     keywords: "dwarka sector 10 21 6 12 23 dwarka link road vegas mall yashobhoomi location near",
@@ -51,7 +51,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Gurgaon",
     path: "/spa-in-gurgaon/",
-    label: "Spa in Gurgaon",
+    label: "Body Massage & Spa near Gurgaon",
     meta: "Around 20 min via NH-8",
     blurb: "Around 20 minutes up NH-8 from Gurugram, with group and GST billing.",
     keywords: "gurgaon gurugram cyber city cyberhub udyog vihar mg road ambience iffco chowk location near",
@@ -61,7 +61,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Saket",
     path: "/spa-in-saket/",
-    label: "Spa in Saket",
+    label: "Body Massage & Spa near Saket",
     meta: "22–25 min drive",
     blurb: "22–25 minutes from the Saket malls and District Centre.",
     keywords: "saket select citywalk dlf avenue district centre max hospital location near",
@@ -71,7 +71,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "South Delhi",
     path: "/spa-in-south-delhi/",
-    label: "Spa in South Delhi",
+    label: "Body Massage & Spa for South Delhi",
     meta: "From 22 min drive",
     blurb: "Hauz Khas, Green Park, Malviya Nagar and nearby, from about 22 minutes.",
     keywords: "south delhi hauz khas green park malviya nagar greater kailash gk defence colony mehrauli location near",
@@ -80,7 +80,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Karol Bagh",
     path: "/spa-in-karol-bagh/",
-    label: "Spa in Karol Bagh",
+    label: "Body Massage & Spa near Karol Bagh",
     meta: "About 25 min drive",
     blurb: "About 25 minutes off-peak, by road via Dhaula Kuan.",
     keywords: "karol bagh ajmal khan road gaffar market pusa road rajendra place central delhi location near",
@@ -89,7 +89,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Delhi",
     path: "/spa-in-delhi/",
-    label: "Spa in Delhi",
+    label: "Body Massage & Spa in Delhi",
     meta: "One spa, all of Delhi",
     blurb: "Where we are in the city, and how to reach us from every side of Delhi.",
     keywords: "delhi new delhi ncr city russian spa mahipalpur defence enclave address map directions location near me",
@@ -98,7 +98,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Connaught Place",
     path: "/spa-in-connaught-place/",
-    label: "Spa in Connaught Place",
+    label: "Body Massage & Spa near Connaught Place",
     meta: "30–45 min drive",
     blurb: "30–45 minutes by road, or the Airport Express from Shivaji Stadium.",
     keywords: "connaught place cp rajiv chowk janpath barakhamba road shivaji stadium central delhi location near",
@@ -108,7 +108,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Paharganj",
     path: "/spa-in-paharganj/",
-    label: "Spa in Paharganj",
+    label: "Body Massage & Spa near Paharganj",
     meta: "Airport Express + auto",
     blurb: "From New Delhi station: the Airport Express to Aerocity, then five minutes by auto.",
     keywords: "paharganj main bazar new delhi railway station rk ashram marg backpacker traveller location near",
@@ -117,7 +117,7 @@ export const LOCATION_PAGES: LocationLink[] = [
   {
     areaName: "Rohini",
     path: "/spa-in-rohini/",
-    label: "Spa in Rohini",
+    label: "Body Massage & Spa near Rohini",
     meta: "40–60 min drive",
     blurb: "A longer trip from north-west Delhi, best planned as a half-day visit.",
     keywords: "rohini sector 3 7 9 10 11 13 14 rithala dc chowk japanese park north west delhi location near",

@@ -11,12 +11,12 @@ const A = "/assets/spa-in-rohini";
 export const ROHINI: LocationContent = {
   path: "/spa-in-rohini/",
   areaName: "Rohini",
-  breadcrumb: "Spa in Rohini",
+  breadcrumb: "Body Massage & Spa near Rohini",
 
   heroImage: `${A}/spa-near-rohini-upper-back-massage.jpg`,
   heroImageAlt: "Black-and-white photo of a therapist working on a guest's upper back, at a spa near Rohini",
   heroBadge: "40–60 Minutes From Rohini By Road",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Rohini" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Rohini" },
   heroText: [
     "We'll be straight with you: if you want a spa in Rohini itself, we aren't it. Our single spa is at Defence Enclave, Mahipalpur, and from Rohini that's usually a 40–60 minute drive depending on traffic.",
     "Why do people make the trip? Longer rituals you won't find on every menu, an authentic Russian Banya, free parking with no time limit and hours that let you avoid the traffic entirely. This page shows how to make the drive worth it.",
@@ -71,8 +71,8 @@ export const ROHINI: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "Longer Bookings",
-    titleLead: "Treatments That",
-    titleEm: "Make The Trip Worthwhile",
+    titleLead: "Body Massage & Spa Rituals",
+    titleEm: "Worth The Trip",
     lede: "Six of our longer and more complete treatments, picked because they suit a visit you've travelled for. Each is charged at the rate on our price list, with taxes included.",
   },
 
@@ -235,12 +235,12 @@ export const ROHINI: LocationContent = {
   geo: { lat: 28.7383, lng: 77.0822 },
 
   seo: {
-    title: "Best Spa & Body Massage near Rohini | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa near Rohini | Mahipalpur Luxury Spa",
     description:
-      "Planning a spa half-day from Rohini? Banya and body massage rituals in Mahipalpur, 40–60 min away, open 24/7 with free parking and no night surcharge.",
-    ogTitle: "Spa near Rohini | Make The Drive Worth It",
+      "Body massage and spa near Rohini, 40–60 min away in Mahipalpur. Plan a half-day with Russian Banya rituals, open 24/7, free parking, no night surcharge.",
+    ogTitle: "Body Massage & Spa near Rohini | Make The Drive Worth It",
     ogDescription:
       "Longer rituals, an authentic Russian Banya and hours that dodge the traffic. One Mahipalpur spa, 40–60 minutes from Rohini, with published prices.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Rohini, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Rohini, open 24 hours",
   },
 };

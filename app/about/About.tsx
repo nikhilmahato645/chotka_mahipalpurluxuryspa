@@ -24,6 +24,21 @@ export default function About() {
           "For over a decade, Mahipalpur Luxury Spa has been the premier choice for authentic spa experiences across Mahipalpur, Aerocity, Dwarka, Vasant Kunj, and near IGI Airport. We brought the authentic Russian Banya tradition to India and built a loyal community of thousands around it.",
           "Whether you're looking for the best spa in Mahipalpur, a luxury massage centre in Aerocity, or a relaxing body spa in Dwarka — we're your trusted wellness partner, open 24/7 every single day.",
         ]}
+        actions={
+          <>
+            <a href={`tel:${PHONE_E164}`} className="btn btn-copper">
+              <PhoneCall size={15} aria-hidden="true" /> Call {PHONE_DISPLAY}
+            </a>
+            <a
+              href={waLink("Hi! I'd like to book an appointment at Mahipalpur Luxury Spa.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost"
+            >
+              <MessageCircle size={15} aria-hidden="true" /> Book via WhatsApp
+            </a>
+          </>
+        }
         stats={STATS}
         image={`${A}/hero-about-spa.jpg`}
         imageAlt="Relaxing in a calm spa bath suite — about Mahipalpur Luxury Spa"

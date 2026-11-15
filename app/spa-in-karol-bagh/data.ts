@@ -11,13 +11,13 @@ const A = "/assets/spa-in-karol-bagh";
 export const KAROL_BAGH: LocationContent = {
   path: "/spa-in-karol-bagh/",
   areaName: "Karol Bagh",
-  breadcrumb: "Spa in Karol Bagh",
+  breadcrumb: "Body Massage & Spa near Karol Bagh",
 
   heroImage: `${A}/spa-near-karol-bagh-scalp-massage.jpg`,
   heroImageAlt:
     "Therapist's fingertips working along a guest's hairline during a scalp massage at a spa near Karol Bagh",
   heroBadge: "About 25 Minutes From Karol Bagh",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Karol Bagh" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Karol Bagh" },
   heroText: [
     "If you're looking for a spa in Karol Bagh that's still open after the shops shut, here is where we are: Mahipalpur Luxury Spa sits at Defence Enclave in Mahipalpur, about 25 minutes by road from Karol Bagh outside peak hours. We don't have a branch in Karol Bagh.",
     "A day behind a counter or walking the market leaves the same marks: aching feet, heavy legs, a tired lower back. This page is built around that, with reflexology, foot rituals and recovery massage, open all night at the same published rates.",
@@ -72,7 +72,7 @@ export const KAROL_BAGH: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "For Tired Feet And Legs",
-    titleLead: "Treatments For",
+    titleLead: "Body Massage & Spa For",
     titleEm: "A Day Of Standing",
     lede: "Picked from our regular menu for feet, legs and the lower back after long hours standing. The prices shown are the same ones on the price list, tax included.",
   },
@@ -240,12 +240,12 @@ export const KAROL_BAGH: LocationContent = {
   geo: { lat: 28.6519, lng: 77.1909 },
 
   seo: {
-    title: "Best Spa & Body Massage near Karol Bagh | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa near Karol Bagh | Mahipalpur Luxury Spa",
     description:
-      "Reflexology, foot rituals and body massage for long days on your feet, about 25 min from Karol Bagh. Open 24/7 in Mahipalpur, no night surcharge.",
-    ogTitle: "Spa near Karol Bagh | Open After The Market Closes",
+      "Body massage and spa near Karol Bagh, about 25 min away. Reflexology and foot rituals for long days standing. Open 24/7 in Mahipalpur, no night surcharge.",
+    ogTitle: "Body Massage & Spa near Karol Bagh | Open After Market Hours",
     ogDescription:
       "For feet, legs and backs that have stood all day: reflexology, foot soaks and recovery massage, open all night. One Mahipalpur spa, about 25 minutes from Karol Bagh.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Karol Bagh, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Karol Bagh, open 24 hours",
   },
 };

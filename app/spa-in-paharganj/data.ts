@@ -12,12 +12,12 @@ const A = "/assets/spa-in-paharganj";
 export const PAHARGANJ: LocationContent = {
   path: "/spa-in-paharganj/",
   areaName: "Paharganj",
-  breadcrumb: "Spa in Paharganj",
+  breadcrumb: "Body Massage & Spa near Paharganj",
 
   heroImage: `${A}/spa-near-paharganj-foot-soak.jpg`,
   heroImageAlt: "Close-up of feet in a herbal foot bath with a pink-and-green frangipani, at a spa near Paharganj",
   heroBadge: "Airport Express From New Delhi Station",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Paharganj" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Paharganj" },
   heroText: [
     "Looking for a spa in Paharganj? We're one stop-and-a-short-ride away rather than in Paharganj itself. Our only spa is at Defence Enclave, Mahipalpur: take the Airport Express from New Delhi station to Aerocity, then a five-minute auto.",
     "It's a practical stop for travellers: open around the clock for late trains and early flights, every price published before you arrive, and a reduced layover rate if you're flying out of IGI within 12 hours.",
@@ -72,7 +72,7 @@ export const PAHARGANJ: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "Made For Travellers",
-    titleLead: "Treatments For",
+    titleLead: "Body Massage & Spa For",
     titleEm: "Life On The Road",
     lede: "Six options from the menu for backpack shoulders, walked-out feet and tight schedules, most of them under ₹2,500. Each one costs what our published price list says, taxes included.",
   },
@@ -236,12 +236,12 @@ export const PAHARGANJ: LocationContent = {
   geo: { lat: 28.6425, lng: 77.2128 },
 
   seo: {
-    title: "Best Spa & Body Massage near Paharganj | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa near Paharganj | Mahipalpur Luxury Spa",
     description:
-      "20–30 min from Paharganj via the Airport Express. Body massage, foot reflexology and Russian Banya, open 24/7 near IGI, with fixed published prices.",
-    ogTitle: "Spa near Paharganj | For Travellers, Open 24/7",
+      "Body massage and spa near Paharganj, 20–30 min by Airport Express. Foot reflexology and Russian Banya, open 24/7 near IGI, with fixed published prices.",
+    ogTitle: "Body Massage & Spa near Paharganj | For Travellers, 24/7",
     ogDescription:
       "Backpack shoulders, tired feet and a flight to catch? One Mahipalpur spa, one Airport Express ride from New Delhi station, with fixed published prices.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Paharganj travellers, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Paharganj travellers, open 24 hours",
   },
 };

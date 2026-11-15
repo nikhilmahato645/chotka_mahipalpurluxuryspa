@@ -10,13 +10,13 @@ const A = "/assets/spa-in-gurgaon";
 export const GURGAON: LocationContent = {
   path: "/spa-in-gurgaon/",
   areaName: "Gurgaon",
-  breadcrumb: "Spa in Gurgaon",
+  breadcrumb: "Body Massage & Spa near Gurgaon",
 
   heroImage: `${A}/spa-near-gurgaon-warm-oil-massage.jpg`,
   heroImageAlt:
     "Warm massage oil poured into a therapist's palm beside a guest lying face down, at a spa near Gurgaon",
   heroBadge: "Around 20 Minutes From Gurugram Via NH-8",
-  h1: { lead: "Best Spa & Body Massage Near", em: "Gurgaon" },
+  h1: { lead: "Best Body Massage & Spa Near", em: "Gurgaon" },
   heroText: [
     "Looking for a spa in Gurgaon that's open at any hour and bills properly for company bookings? We're at Defence Enclave, Mahipalpur, on the Delhi stretch of NH-8, around 20 minutes from Gurugram outside peak traffic. We run one premises and have no branch in Gurgaon.",
     "For individuals, there's deep tissue and sports recovery after a long week. For teams, there are group sessions with invoiced billing and full GST documentation. Either way, the rate is the same at 3 PM or 3 AM, and parking is free.",
@@ -71,7 +71,7 @@ export const GURGAON: LocationContent = {
 
   treatmentsHead: {
     eyebrow: "For Long Weeks And Teams",
-    titleLead: "Treatments For",
+    titleLead: "Body Massage & Spa For",
     titleEm: "Gurgaon Schedules",
     lede: "Whether it's a demanding week, a training plan or a team outing, these menu treatments fit well. Each costs exactly what the price list says, taxes and all.",
   },
@@ -239,12 +239,12 @@ export const GURGAON: LocationContent = {
   geo: { lat: 28.4595, lng: 77.0266 },
 
   seo: {
-    title: "Best Spa & Body Massage near Gurgaon | Mahipalpur Luxury Spa",
+    title: "Best Body Massage & Spa near Gurgaon | Mahipalpur Luxury Spa",
     description:
-      "Around 20 min from Gurugram via NH-8. Body massage, sports recovery and Russian Banya, open 24/7, with group rates and GST invoices for companies.",
-    ogTitle: "Spa near Gurgaon | Open 24/7, Group & GST Billing",
+      "Body massage and spa near Gurgaon, around 20 min via NH-8. Sports recovery and Russian Banya, open 24/7, with group rates and GST invoices for companies.",
+    ogTitle: "Body Massage & Spa near Gurgaon | Open 24/7, GST Billing",
     ogDescription:
       "Deep tissue and sports recovery after long weeks, plus team bookings with GST invoices. One Mahipalpur spa, around 20 minutes from Gurugram via NH-8.",
-    ogImageAlt: "Mahipalpur Luxury Spa, a spa serving Gurgaon, open 24 hours",
+    ogImageAlt: "Mahipalpur Luxury Spa, body massage and spa serving Gurgaon, open 24 hours",
   },
 };
